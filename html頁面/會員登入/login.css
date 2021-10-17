@@ -277,9 +277,9 @@ table {
 }
 
 /* 下方按鈕部分 */
-.button-flex{
-  /* display: flex; */
-}
+/* .button-flex{
+  display: flex; 
+} */
 
 @media (max-width: 375px) {
   .button-flex {
