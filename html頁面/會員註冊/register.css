@@ -145,8 +145,8 @@ table {
 }
 @media (max-width: 375px) {
   .zi-login {
-    position: static;
-    top: 0px;
+    position: relative;
+    top: 55px;
     display:inline-flex;
     justify-content: stretch;
     align-items:stretch;
