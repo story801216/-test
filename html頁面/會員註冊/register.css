@@ -143,11 +143,34 @@ table {
     justify-content: center;
     align-items: center; 
 }
+@media (max-width: 375px) {
+  .zi-login {
+    position: static;
+    top: 0px;
+    display:inline-flex;
+    justify-content: stretch;
+    align-items:stretch;
+  }
+}
 .zi-login .login-background {
     width: 100%;
     height: 1293px;
     opacity: 0.4;
     object-fit: cover;
+}
+@media (max-width: 375px) {
+  .zi-login .login-background {
+    display:none;
+  }
+}
+
+.card-content {
+  padding:0px 53px;
+}
+@media (max-width: 375px) {
+  .card-content {
+    padding:0px 35px;
+  }
 }
 
 .zi-login-card {
@@ -156,6 +179,14 @@ table {
     background: #ffffff;
     box-shadow: 1px 6px 6px 6px rgba(0, 0, 0, 0.25);
     border-radius: 31.6768px;
+}
+@media (max-width: 375px) {
+  .zi-login-card {
+    position:static;
+    width: 375px;
+    box-shadow: none;
+    border-radius: 0px;
+  }
 }
 
 .zi-login-card h1 {
@@ -168,6 +199,12 @@ table {
     color: rgb(31 31 31);
 }
 
+@media (max-width: 375px) {
+  .zi-login-card h1 {
+    font-size: 36px;
+  }
+}
+
 .zi-login-card p{
     margin-bottom: 25px;
     align-items: center;
@@ -176,20 +213,24 @@ table {
     color: #777777;
 }
 
+@media (max-width: 375px) {
+  .zi-login-card p {
+    font-size: 16px;
+  }
+}
+
 .card-line{
-    margin-left: 53px;
-    width: 767px;
     border-top: 2px solid #66CBFF;
 }
 
 /* 註冊表單內容 */
 
 .form-login{
-    width: 767px;
+  width: 100%;
     display: flex;
     flex-direction: column;
-    margin-left: 53px;
 }
+
 
 .form-login label{
     margin-top: 32px;
@@ -199,10 +240,23 @@ table {
     letter-spacing: 0.225em;
 }
 
+@media (max-width: 375px) {
+  .form-login label {
+    font-size: 16px;
+  }
+}
+
 .form-login input{
-    font-size: 25px;
+    font-size:25px;
     height:65px;
     padding:8px;
+}
+
+@media (max-width: 375px) {
+  .form-login input {
+    height:55px;
+    font-size: 18px;
+  }
 }
 
 .form-login .Birthday-text{
@@ -218,6 +272,12 @@ table {
   margin-top: 32px;
   font-size: 20px;
   color:red;
+}
+
+@media (max-width: 375px) {
+  .forget-pw {
+    font-size: 16px;
+  }
 }
 
 .checkbox-flex{
@@ -241,13 +301,26 @@ table {
   margin-right: 30px;
   width: 25px;
   height: 25px;
+}
 
+@media (max-width: 375px) {
+  #register-Checkbox{
+    margin-right: 25px;
+  }
 }
 
 /* 下方按鈕部分 */
 .button-flex{
   display: flex;
-  justify-content:center;
+  justify-content: center;
+}
+
+@media (max-width: 375px) {
+  .button-flex {
+    display: flex;
+    Height: 49px;
+    font-size: 18px;
+  }
 }
 
 .form-login button{
@@ -261,6 +334,15 @@ table {
     line-height: 21px;
     letter-spacing: 0.25em;
     color: #FFFFFF;
+}
+
+@media (max-width: 375px) {
+  .form-login button {
+    Width: 100px;
+    Height: 49px;
+    font-size: 18px;
+    letter-spacing: 0.1em;
+  }
 }
 
 .button-flex .register-submit{
