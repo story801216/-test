@@ -318,10 +318,7 @@ table {
     background-color: #66CBFF;
 }
 
-@media (max-width: 375px) {
-  .button .register {
-  }
-}
+
 
 .register:hover{
     opacity: 0.8;
