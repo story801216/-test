@@ -142,7 +142,7 @@ table {
     /* position: relative; */
     top: 55px;
     /* display: inline-flex; */
-    justify-content: stretch;
+    justify-content:center;
     align-items: stretch;
   }
 }
@@ -183,6 +183,7 @@ table {
     width: 307px;
     box-shadow: none;
     border-radius: 0px;
+    display: none;
   }
 }
 
@@ -318,8 +319,8 @@ table {
 @media (max-width: 375px) {
   .button-flex {
     position: absolute;
-    top: 1148px;
-    left: 36%;
+    top: 1200px;
+    left: 38%;
     height: 49px;
     font-size: 18px;
   }
@@ -357,9 +358,27 @@ table {
   margin-top: 83px;
 }
 
+.uploadimg-group h1 {
+  margin-top: 38px;
+  margin-bottom: 25px;
+  font-weight: bold;
+  font-size: 40px;
+  text-align: center;
+  letter-spacing: 0.075em;
+  color: rgb(31 31 31);
+}
+
+
+@media (max-width: 375px) {
+  .uploadimg-group h1 {
+    font-size: 36px;
+  }
+}
+
 @media (max-width: 375px) {
   .uploadimg-group {
-    display: none;
+    /* display: none; */
+    width: 307px;
   }
 }
 
@@ -372,6 +391,15 @@ table {
   font-size: 20px;
 }
 
+
+@media (max-width: 375px) {
+  .uploadimg-group .card-line {
+    /* display: none; */
+    width: 307px;
+    margin-bottom: 68px;
+  }
+}
+
 .uploadimg-group .uploadpic {
   width: 585px;
   height: 863px;
@@ -381,6 +409,14 @@ table {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+@media (max-width: 375px) {
+  .uploadimg-group .uploadpic  {
+    /* display: none; */
+    width: 307px;
+    margin-bottom: 60px;
+  }
 }
 
 .uploadpic a {
@@ -399,4 +435,10 @@ table {
   width: 92px;
   border-radius: 50%;
   background-color: #66cbff;
+}
+
+@media (max-width: 375px) {
+  .uploadpic .uploadbtn  {
+    margin-bottom: 61px;
+  }
 }
