@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>處方籤預約領藥</title>
+    <link rel="stylesheet" href="select-shop.css" />
+  </head>
+  <body>
+    <div class="zi-Prescription zi-select-shop">
+      <img class="background" src="../../img/預約領藥背景圖.jpg" alt="" />
+      <div class="form-list">
+        <div class="card-content">
+          <h1>選取領藥門市</h1>
+          <p>可自行選取門市，也可自動找尋最近門市</p>
+          <div class="card-line"></div>
+          <div class="autofindbtn"> <img src="../../img/iocn/placeholder.png" alt=""> 自動搜尋最近門市</div>
+          <form class="form-content" action="">
+            
+            <label class="city-label" for="city">城市</label>
+            <select name="city" id="city">
+              <option value="0">請選取指定城市</option>
+              <option value="0">台北市</option>
+              <option value="1">新北市</option>
+              <option value="2">基隆市</option>
+            </select>
+
+            <label for="area">區域</label>
+            <select name="city" id="city">
+              <option value="0">請選取區域</option>
+              <option value="0">中正區</option>
+              <option value="1">中山區</option>
+              <option value="2">文山區</option>
+            </select>
+
+            <label for="city">門市</label>
+            <select name="city" id="city">
+              <option value="0">請選取指定門市</option>
+              <option value="0">吉林中山店</option>
+              <option value="1">吉林中山店</option>
+              <option value="2">吉林中山店</option>
+            </select>
+    
+          </form>
+        </div>
+
+        <div class="map-group">
+          <div class="uploadpic">
+            <iframe class="google-map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14459.21557629706!2d121.54841739999999!3d25.0407284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1szh-TW!2stw!4v1634625802772!5m2!1szh-TW!2stw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="button-flex">
+        <button type="submit" class="form-submit backstep">上一步</button>
+        <button type="submit" class="form-submit">送出</button>
+      </div>
+    </div>
+  </body>
+</html>
