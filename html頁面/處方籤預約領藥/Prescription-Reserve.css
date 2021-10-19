@@ -141,7 +141,7 @@ table {
   .zi-Prescription {
     /* position: relative; */
     top: 55px;
-    display: inline-flex;
+    /* display: inline-flex; */
     justify-content: stretch;
     align-items: stretch;
   }
@@ -164,6 +164,12 @@ table {
   top: 0px;
 }
 
+@media (max-width: 375px) {
+  .form-list{
+    width: 307px;
+  }
+}
+
 .card-content {
   /* position: absolute; */
   padding-right:150px ;
@@ -171,9 +177,10 @@ table {
 }
 @media (max-width: 375px) {
   .card-content {
-    padding: 0px 35px;
-    position: static;
-    width: 375px;
+    padding: 0px;
+    position: absolute;
+    left: 10%;
+    width: 307px;
     box-shadow: none;
     border-radius: 0px;
   }
@@ -356,11 +363,27 @@ table {
   }
 }
 
+@media (max-width: 375px) {
+  .button-flex button {
+    width: 100px;
+    height: 49px;
+    font-size: 18px;
+    letter-spacing: 0.1em;
+  }
+}
+
 /* ************右邊部分 ***************************************/
 
 .uploadimg-group {
   margin-top: 83px;
 }
+
+@media (max-width: 375px) {
+  .uploadimg-group {
+    display: none;
+  }
+}
+
 .uploadimg-group p {
   margin-top: 15px;
   margin-bottom: 24px;
