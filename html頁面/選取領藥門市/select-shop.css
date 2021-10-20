@@ -128,7 +128,8 @@ table {
   border-spacing: 0;
 }
 
-/**css reset**************************/
+/**css reset************************************/
+
 
 .zi-select-shop {
   position: relative;
@@ -139,10 +140,7 @@ table {
 }
 @media (max-width: 375px) {
   .zi-select-shop {
-    /* position: relative; */
     top: 55px;
-    /* display: inline-flex; */
-    justify-content: stretch;
     align-items: stretch;
   }
 }
@@ -164,11 +162,7 @@ table {
   top: 0px;
 }
 
-@media (max-width: 375px) {
-  .form-list{
-    width: 307px;
-  }
-}
+
 
 .card-content {
   /* position: absolute; */
@@ -178,10 +172,10 @@ table {
 }
 @media (max-width: 375px) {
   .card-content {
+    margin-top:0px;
     padding: 0px;
     position: absolute;
-    /* left: 10%; */
-    width: 307px;
+    width: 100%;
     box-shadow: none;
     border-radius: 0px;
   }
@@ -322,13 +316,12 @@ table {
 
 @media (max-width: 375px) {
   .button-flex {
-      width: 307px;
+    width: 307px;
     position: absolute;
-    top: 1148px;
-    /* left: 36%; */
+    top: 1030px;
+    bottom:0px;
     height: 49px;
     font-size: 18px;
-    display: flex;
     justify-content: space-between;
   }
 }
@@ -379,6 +372,9 @@ table {
   .map-group {
     /* display: none; */
     width: 307px;
+    margin-top:0px;
+    position: relative;
+    top: 700px;
   }
 }
 
@@ -386,11 +382,10 @@ table {
 
 .map-group .uploadpic {
   width: 100%;
-  height: 863px;
   background: #dee8ef;
   border: 2px dashed #66cbff;
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
   flex-direction: column;
 }
