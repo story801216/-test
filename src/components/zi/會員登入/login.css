@@ -1,0 +1,346 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/*CSS Reset**************************/
+/* @font-face{
+
+} */
+
+/* .zi{
+    font-family:GenSenRounded-TW;
+} */
+/* *{
+  box-sizing: border-box;
+} */
+.zi{
+    position: relative;
+    top: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+@media (max-width: 375px) {
+  .zi {
+    position: relative;
+    top: 55px;
+    display:inline-flex;
+    justify-content: stretch;
+    align-items:stretch;
+  }
+}
+.zi .background {
+    width: 100%;
+    height: 780px;
+    opacity: 0.4;
+    object-fit: cover;
+}
+@media (max-width: 375px) {
+  .zi .background {
+    display:none;
+  }
+}
+
+.card-content {
+  padding:0px 53px;
+}
+@media (max-width: 375px) {
+  .card-content {
+    padding:0px 35px;
+  }
+}
+
+.zi-card {
+    position: absolute;
+    background: #ffffff;
+    box-shadow: 1px 6px 6px 6px rgba(0, 0, 0, 0.25);
+    border-radius: 31.6768px;
+}
+@media (max-width: 375px) {
+  .zi-card {
+    position:static;
+    width: 375px;
+    box-shadow: none;
+    border-radius: 0px;
+  }
+}
+
+.zi-card h1 {
+    margin-top: 38px;
+    margin-bottom: 25px;
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+    letter-spacing: 0.075em;
+    color: rgb(31 31 31);
+}
+
+@media (max-width: 375px) {
+  .zi-card h1 {
+    font-size: 36px;
+  }
+}
+
+.zi-card p{
+    margin-bottom: 25px;
+    align-items: center;
+    font-size: 20px;
+    text-align: center;
+    color: #777777;
+}
+
+@media (max-width: 375px) {
+  .zi-card p {
+    font-size: 16px;
+  }
+}
+
+.card-line{
+    border-top: 2px solid #66CBFF;
+}
+
+
+.form-content{
+    width: 767px;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 375px) {
+  .form-content {
+    width: 100%;
+  }
+}
+
+
+.form-content label{
+    margin-top: 32px;
+    margin-bottom: 8px;
+    font-size: 20px;
+    color: #5c5c5c;
+    letter-spacing: 0.225em;
+}
+
+@media (max-width: 375px) {
+  .form-content label {
+    font-size: 16px;
+  }
+}
+
+.form-content input{
+    font-size:25px;
+    height:65px;
+    padding:8px;
+}
+
+@media (max-width: 375px) {
+  .form-content input {
+    height:55px;
+    font-size: 18px;
+  }
+}
+
+.password-text{
+  display: flex;
+  justify-content:space-between;
+}
+
+.forget-pw{
+  margin-top: 32px;
+  font-size: 20px;
+  color:red;
+}
+
+@media (max-width: 375px) {
+  .forget-pw {
+    font-size: 16px;
+  }
+}
+
+/* 下方按鈕部分 */
+.button-flex{
+  margin: 0px auto;
+}
+
+@media (max-width: 375px) {
+  .button-flex {
+    display: flex;
+    Height: 49px;
+    font-size: 18px;
+  }
+}
+
+.form-content button{
+    margin-top: 46px;
+    margin-bottom: 46px;
+    Width :215px;
+    Height: 49px;
+    border:none;
+    border-radius: 10px;
+
+    font-size: 20px;
+    line-height: 21px;
+    letter-spacing: 0.25em;
+    color: #FFFFFF;
+}
+
+@media (max-width: 375px) {
+  .form-content button {
+    Width: 100px;
+    Height: 49px;
+    font-size: 18px;
+    letter-spacing: 0.1em;
+  }
+}
+
+
+
+.register{
+    background-color: #66CBFF;
+}
+
+
+
+.register:hover{
+    opacity: 0.8;
+}
+
+.login{
+    background-color: #00A0F0;
+    margin-left: 172px;
+}
+
+@media (max-width: 375px) {
+  .login {
+    margin-left: 111px;
+  }
+}
+
+.login:hover{
+  opacity: 0.8;
+}
