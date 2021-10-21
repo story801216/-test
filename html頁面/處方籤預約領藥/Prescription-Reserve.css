@@ -165,14 +165,14 @@ table {
 }
 
 @media (max-width: 375px) {
-  .form-list{
+  .form-list {
     width: 307px;
   }
 }
 
 .card-content {
   /* position: absolute; */
-  padding-right:150px ;
+  padding-right: 150px;
   width: 600px;
 }
 @media (max-width: 375px) {
@@ -291,7 +291,6 @@ table {
   }
 }
 
-
 .radio-flex {
   display: flex;
 }
@@ -318,7 +317,7 @@ table {
 @media (max-width: 375px) {
   .button-flex {
     position: absolute;
-    top: 1148px;
+    top: 2150px;
     left: 36%;
     height: 49px;
     font-size: 18px;
@@ -359,7 +358,12 @@ table {
 
 @media (max-width: 375px) {
   .uploadimg-group {
-    display: none;
+    width: 307px;
+    height: 485px;
+    margin: 0px auto;
+    position: relative;
+    left: 9.5%;
+    top:1200px;
   }
 }
 
@@ -383,6 +387,14 @@ table {
   flex-direction: column;
 }
 
+@media (max-width: 375px) {
+  .uploadimg-group .uploadpic {
+    /* display: none; */
+    width: 307px;
+    margin-bottom: 60px;
+  }
+}
+
 .uploadpic a {
   font-size: 25px;
   color: #777777;
@@ -392,11 +404,16 @@ table {
   margin-top: 20px;
 }
 
-
-.uploadpic .uploadbtn{
+.uploadpic .uploadbtn {
   display: block;
   height: 92px;
   width: 92px;
   border-radius: 50%;
   background-color: #66cbff;
+}
+
+@media (max-width: 375px) {
+  .uploadpic .uploadbtn {
+    margin-bottom: 61px;
+  }
 }
