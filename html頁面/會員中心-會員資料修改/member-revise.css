@@ -1,3 +1,133 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/*CSS Reset**************************/
 .zi-member-revise {
   width: 1140px;
   display: flex;
@@ -7,9 +137,22 @@
   top: 240px;
 }
 
+@media (max-width: 375px) {
+  .zi-member-revise {
+    width: 306px;
+    top: 0px;
+  }
+}
+
 .pagination {
   display: flex;
   justify-content: center;
+}
+
+@media (max-width: 375px) {
+  .pagination {
+    display: none;
+  }
 }
 
 .pagination div {
@@ -36,10 +179,16 @@
 }
 
 .bottom-line {
-  margin-left: 2px;
+  margin-left: 3px;
   width: 1135px;
   height: 6px;
   background-color: #00a0f0;
+}
+
+@media (max-width: 375px) {
+  .bottom-line {
+    display: none;
+  }
 }
 
 /* 表單內容 */
@@ -50,6 +199,14 @@
   margin: 0px auto;
   margin-top: 88px;
   flex-direction: column;
+}
+
+@media (max-width: 375px) {
+  .form-content {
+    height: 55px;
+    font-size: 18px;
+    width: 307px;
+  }
 }
 
 .form-content label {
@@ -85,6 +242,7 @@
 
 .form-content .Birthday-text {
   color: #5c5c5c;
+  padding: 20px;
 }
 
 .password-text {
@@ -98,7 +256,7 @@ label p {
 
 /*************下方按鈕部分***************************************/
 .button-flex {
-  margin: 76px auto;
+  margin: 36px auto;
   display: flex;
   width: 765px;
   /* position: absolute; */
@@ -106,17 +264,17 @@ label p {
   /* justify-content: center; */
 }
 
-/* @media (max-width: 375px) {
+@media (max-width: 375px) {
   .button-flex {
-    width: 307px;
-    position: absolute;
-    top: 1030px;
-    bottom:0px;
+    display: flex;
     height: 49px;
     font-size: 18px;
+    width: 307px;
     justify-content: space-between;
+    position: relative;
+    top: 600px;
   }
-} */
+}
 
 .button-flex button {
   margin-top: 46px;
@@ -133,12 +291,12 @@ label p {
 }
 
 .button-flex .backstep {
-  margin-right: 253px;
+  /* margin-right: 253px; */
 }
 
 @media (max-width: 375px) {
   .button-flex .backstep {
-    margin-right: 0px;
+    /* margin-right: 0px; */
   }
 }
 
