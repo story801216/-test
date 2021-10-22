@@ -1,3 +1,133 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/*CSS Reset**************************/
 .zi-prescription_stage {
   width: 1140px;
   display: flex;
@@ -14,18 +144,18 @@
   }
 }
 
-.pagination {
+.zi-prescription_stage-pagination {
   display: flex;
   justify-content: center;
 }
 
 @media (max-width: 375px) {
-  .pagination {
+  .zi-prescription_stage-pagination {
     display: none;
   }
 }
 
-.pagination div {
+.zi-prescription_stage-pagination div {
   width: 345px;
   height: 60px;
   background: #66cbff;
@@ -39,16 +169,16 @@
   align-items: center;
 }
 
-#prescription-stage {
+#zi-prescription_stage-prescription-stage {
   margin: 0px 50px;
   background-color: #00a0f0;
 }
 
-#order-list {
+#zi-prescription_stage-order-list {
   background-color: #66cbff;
 }
 
-.bottom-line {
+.zi-prescription_stage-bottom-line {
   margin-left: 2.5px;
   width: 1135px;
   height: 6px;
@@ -56,13 +186,13 @@
 }
 
 @media (max-width: 375px) {
-  .bottom-line {
+  .zi-prescription_stage-bottom-line {
     display: none;
   }
 }
 
 /*****處方篩選區域************************************************/
-.prescription-select select {
+.zi-prescription_stage-prescription-select select {
   width: 216px;
   height: 38px;
   font-size: 20px;
@@ -71,7 +201,7 @@
 }
 
 @media (max-width: 375px) {
-  .prescription-select select {
+  .zi-prescription_stage-prescription-select select {
     width: 309px;
     height: 46px;
     margin-top: 40px;
@@ -80,14 +210,14 @@
   }
 }
 @media (max-width: 375px) {
-  #month-stage {
+  #zi-prescription_stage-month-stage {
     margin-bottom: 50px;
   }
 }
 
 /****處方資料卡***********************************/
 
-.prescription-card {
+.zi-prescription_stage-prescription-card {
   height: 415px;
   background-color: #a0ddff;
   border-radius: 30px;
@@ -96,7 +226,7 @@
 }
 
 @media (max-width: 375px) {
-  .prescription-card {
+  .zi-prescription_stage-prescription-card {
     position: relative;
     width: 309px;
     height: 100%;
@@ -106,12 +236,12 @@
   }
 }
 
-.hidden-bar {
+.zi-prescription_stage-hidden-bar {
   display: none;
 }
 
 @media (max-width: 375px) {
-  .hidden-bar {
+  .zi-prescription_stage-hidden-bar {
     position: absolute;
     width: 309px;
     height: 42px;
@@ -126,30 +256,33 @@
 }
 
 @media (max-width: 375px) {
-  .hidden-bar img {
+  .zi-prescription_stage-hidden-bar img {
     width: 20px;
     height: 16px;
   }
 }
 
 /***處方資料卡裡的li部分*****************************************/
-.infolist {
+.zi-prescription_stage-infolist {
   margin-top: 36.5px;
 }
 
-.infolist ul {
+.zi-prescription_stage-infolist ul {
   display: flex;
+  margin-left: 38px;
+  margin-top: 10px;
 }
 
 @media (max-width: 375px) {
-  .infolist ul {
+  .zi-prescription_stage-infolist ul {
+    margin: 0px;
     flex-direction: column;
     padding: 0px;
     align-items: center;
   }
 }
 
-.infolist li {
+.zi-prescription_stage-infolist li {
   margin-top: 35px;
   margin-right: 35px;
   width: 311px;
@@ -162,7 +295,7 @@
 }
 
 @media (max-width: 375px) {
-  .infolist li {
+  .zi-prescription_stage-infolist li {
     width: 271px;
     height: 28px;
     margin: 0px;
@@ -171,7 +304,7 @@
 }
 
 /***處方資料卡裡圖片部分********************/
-.prescription-img {
+.zi-prescription_stage-prescription-img {
   margin-top: 30px;
   width: 355px;
   height: 359px;
@@ -179,19 +312,19 @@
 }
 
 @media (max-width: 375px) {
-  .prescription-img {
+  .zi-prescription_stage-prescription-img {
     width: 281px;
     height: 320px;
     margin-bottom: 15px;
   }
 }
 
-.prescription-img .prescription-preview {
+.zi-prescription_stage-prescription-preview {
   width: 100%;
   height: 100%;
 }
 
-.prescription-img .magnifier {
+.zi-prescription_stage-magnifier {
   position: absolute;
   bottom: 0px;
   right: 0px;

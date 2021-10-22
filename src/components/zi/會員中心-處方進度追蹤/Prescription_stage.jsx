@@ -6,20 +6,26 @@ import Magnifier from '../../../img/icon/magnifier.png'
 function Prescription_stage() {
   return (
     <>
-      <div class="zi-prescription_stage">
-        <div class="pagination">
-          <div class="member-profile" id="member-profile">
+      <div className="zi-prescription_stage">
+        <div className="zi-prescription_stage-pagination">
+          <div className="member-profile" id="member-profile">
             會員資料
           </div>
-          <div class="prescription-stage" id="prescription-stage">
+          <div
+            className="prescription-stage"
+            id="zi-prescription_stage-prescription-stage"
+          >
             處方籤進度與紀錄
           </div>
-          <div class="order-list" id="order-list">
+          <div
+            className="zi-prescription_stage-order-list"
+            id="zi-prescription_stage-order-list"
+          >
             訂單查詢
           </div>
         </div>
-        <div class="bottom-line"></div>
-        <div class="prescription-select">
+        <div className="zi-prescription_stage-bottom-line"></div>
+        <div className="zi-prescription_stage-prescription-select">
           <select name="select_stage" id="select-stage">
             <option value="0">請選擇調配進度</option>
             <option value="1">已上傳</option>
@@ -28,15 +34,15 @@ function Prescription_stage() {
             <option value="4">已領取</option>
           </select>
 
-          <select name="mouth_stage" id="month-stage">
+          <select name="mouth_stage" id="zi-prescription_stage-month-stage">
             <option value="0">八月份處方</option>
             <option value="1">九月份處方</option>
             <option value="2">十月份處方</option>
           </select>
         </div>
-        <div class="prescription-card">
-          <div class="infolist">
-            <div class="hidden-bar">
+        <div className="zi-prescription_stage-prescription-card">
+          <div className="zi-prescription_stage-infolist">
+            <div className="zi-prescription_stage-hidden-bar">
               <img src={Up_arrow} alt="" />
             </div>
             <ul>
@@ -54,13 +60,17 @@ function Prescription_stage() {
               </div>
             </ul>
           </div>
-          <div class="prescription-img">
+          <div className="zi-prescription_stage-prescription-img">
             <img
-              class="prescription-preview"
+              className="zi-prescription_stage-prescription-preview"
               src={Prescription_preview}
               alt=""
             />
-            <img class="magnifier" src={Magnifier} alt="" />
+            <img
+              className="zi-prescription_stage-magnifier"
+              src={Magnifier}
+              alt=""
+            />
           </div>
         </div>
       </div>
