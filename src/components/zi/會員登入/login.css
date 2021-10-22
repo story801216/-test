@@ -138,210 +138,203 @@ table {
 /* *{
   box-sizing: border-box;
 } */
-.zi{
-    position: relative;
-    top: 120px;
-    display: flex;
-    justify-content: center;
-    align-items: center; 
+.zi-Login {
+  position: relative;
+  top: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 @media (max-width: 375px) {
-  .zi {
+  .zi-Login {
     position: relative;
     top: 55px;
-    display:inline-flex;
+    display: inline-flex;
     justify-content: stretch;
-    align-items:stretch;
+    align-items: stretch;
   }
 }
-.zi .background {
-    width: 100%;
-    height: 780px;
-    opacity: 0.4;
-    object-fit: cover;
+.zi-Login-background {
+  width: 100%;
+  height: 780px;
+  opacity: 0.4;
+  object-fit: cover;
 }
 @media (max-width: 375px) {
-  .zi .background {
-    display:none;
-  }
-}
-
-.card-content {
-  padding:0px 53px;
-}
-@media (max-width: 375px) {
-  .card-content {
-    padding:0px 35px;
+  .zi-Login-background {
+    display: none;
   }
 }
 
-.zi-card {
-    position: absolute;
-    background: #ffffff;
-    box-shadow: 1px 6px 6px 6px rgba(0, 0, 0, 0.25);
-    border-radius: 31.6768px;
+.zi-Login-card-content {
+  padding: 0px 53px;
 }
 @media (max-width: 375px) {
-  .zi-card {
-    position:static;
+  .zi-Login-card-content {
+    padding: 0px 35px;
+  }
+}
+
+.zi-Login-card {
+  position: absolute;
+  background: #ffffff;
+  box-shadow: 1px 6px 6px 6px rgba(0, 0, 0, 0.25);
+  border-radius: 31.6768px;
+}
+@media (max-width: 375px) {
+  .zi-Login-card {
+    position: static;
     width: 375px;
     box-shadow: none;
     border-radius: 0px;
   }
 }
 
-.zi-card h1 {
-    margin-top: 38px;
-    margin-bottom: 25px;
-    font-weight: bold;
-    font-size: 40px;
-    text-align: center;
-    letter-spacing: 0.075em;
-    color: rgb(31 31 31);
+.zi-Login-card-content h1 {
+  margin-top: 38px;
+  margin-bottom: 25px;
+  font-weight: bold;
+  font-size: 40px;
+  text-align: center;
+  letter-spacing: 0.075em;
+  color: rgb(31 31 31);
 }
 
 @media (max-width: 375px) {
-  .zi-card h1 {
+  .zi-Login-card-content h1 {
     font-size: 36px;
   }
 }
 
-.zi-card p{
-    margin-bottom: 25px;
-    align-items: center;
-    font-size: 20px;
-    text-align: center;
-    color: #777777;
+.zi-Login-card-content p {
+  margin-bottom: 25px;
+  align-items: center;
+  font-size: 20px;
+  text-align: center;
+  color: #777777;
 }
 
 @media (max-width: 375px) {
-  .zi-card p {
+  .zi-Login-card-content p {
     font-size: 16px;
   }
 }
 
-.card-line{
-    border-top: 2px solid #66CBFF;
+.zi-Login-card-line {
+  border-top: 2px solid #66cbff;
 }
 
-
-.form-content{
-    width: 767px;
-    display: flex;
-    flex-direction: column;
+.zi-Login-form-content {
+  width: 767px;
+  display: flex;
+  flex-direction: column;
 }
 
 @media (max-width: 375px) {
-  .form-content {
+  .zi-Login-form-content {
     width: 100%;
   }
 }
 
-
-.form-content label{
-    margin-top: 32px;
-    margin-bottom: 8px;
-    font-size: 20px;
-    color: #5c5c5c;
-    letter-spacing: 0.225em;
+.zi-Login-form-content label {
+  margin-top: 32px;
+  margin-bottom: 8px;
+  font-size: 20px;
+  color: #5c5c5c;
+  letter-spacing: 0.225em;
 }
 
 @media (max-width: 375px) {
-  .form-content label {
+  .zi-Login-form-content label {
     font-size: 16px;
   }
 }
 
-.form-content input{
-    font-size:25px;
-    height:65px;
-    padding:8px;
+.zi-Login-form-content input {
+  font-size: 25px;
+  height: 65px;
+  padding: 8px;
 }
 
 @media (max-width: 375px) {
-  .form-content input {
-    height:55px;
+  .zi-Login-form-content input {
+    height: 55px;
     font-size: 18px;
   }
 }
 
-.password-text{
+.zi-Login-password-text {
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
 }
 
-.forget-pw{
+.zi-Login-forget-pw {
   margin-top: 32px;
   font-size: 20px;
-  color:red;
+  color: red;
 }
 
 @media (max-width: 375px) {
-  .forget-pw {
+  .zi-Login-forget-pw {
     font-size: 16px;
   }
 }
 
 /* 下方按鈕部分 */
-.button-flex{
+.zi-Login-button-flex {
   margin: 0px auto;
 }
 
 @media (max-width: 375px) {
-  .button-flex {
+  .zi-Login-button-flex {
     display: flex;
-    Height: 49px;
+    height: 49px;
     font-size: 18px;
   }
 }
 
+.zi-Login-form-content button {
+  margin-top: 46px;
+  margin-bottom: 46px;
+  width: 215px;
+  height: 49px;
+  border: none;
+  border-radius: 10px;
 
-.form-content button{
-    margin-top: 46px;
-    margin-bottom: 46px;
-    Width :215px;
-    Height: 49px;
-    border:none;
-    border-radius: 10px;
-
-    font-size: 20px;
-    line-height: 21px;
-    letter-spacing: 0.25em;
-    color: #FFFFFF;
+  font-size: 20px;
+  line-height: 21px;
+  letter-spacing: 0.25em;
+  color: #ffffff;
 }
 
 @media (max-width: 375px) {
-  .form-content button {
-    Width: 100px;
-    Height: 49px;
+  .zi-Login-form-content button {
+    width: 100px;
+    height: 49px;
     font-size: 18px;
     letter-spacing: 0.1em;
   }
 }
 
-
-
-.register{
-    background-color: #66CBFF;
+.zi-Login-register {
+  background-color: #66cbff;
 }
 
-
-
-.register:hover{
-    opacity: 0.8;
+zi-Login-register:hover {
+  opacity: 0.8;
 }
 
-.login{
-    background-color: #00A0F0;
-    margin-left: 172px;
+.zi-Login-login {
+  background-color: #00a0f0;
+  margin-left: 172px;
 }
 
 @media (max-width: 375px) {
-  .login {
+  .zi-Login-login {
     margin-left: 111px;
   }
 }
 
-.login:hover{
+.zi-Login-login:hover {
   opacity: 0.8;
 }
