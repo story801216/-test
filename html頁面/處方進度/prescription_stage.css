@@ -75,6 +75,8 @@
   height: 415px;
   background-color: #a0ddff;
   border-radius: 30px;
+  display: flex;
+  margin-bottom: 50px;
 }
 
 /***處方資料卡裡的li部分*****************************************/
@@ -99,7 +101,7 @@
 }
 
 /***處方資料卡裡圖片部分********************/
-/* .prescription-img {
+.prescription-img {
   margin-top: 40px;
   width: 305px;
   height: 334px;
@@ -114,6 +116,7 @@
 .prescription-img .magnifier{
     position:absolute;
     bottom:0px;
-    width: 30px;
-    height: 30px;
-} */
+    right: 0px;
+    width: 31px;
+    height: 31px;
+}
