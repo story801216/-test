@@ -1,0 +1,200 @@
+.zi-prescription_stage {
+  width: 1140px;
+  display: flex;
+  flex-direction: column;
+  margin: 0px auto;
+  position: relative;
+  top: 240px;
+}
+
+@media (max-width: 375px) {
+  .zi-prescription_stage {
+    width: 306px;
+    top: 0px;
+  }
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 375px) {
+  .pagination {
+    display: none;
+  }
+}
+
+.pagination div {
+  width: 345px;
+  height: 60px;
+  background: #66cbff;
+  border-radius: 10px 10px 0px 0px;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  letter-spacing: 0.22em;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#prescription-stage {
+  margin: 0px 50px;
+  background-color: #00a0f0;
+}
+
+#order-list {
+  background-color: #66cbff;
+}
+
+.bottom-line {
+  margin-left: 2.5px;
+  width: 1135px;
+  height: 6px;
+  background-color: #00a0f0;
+}
+
+@media (max-width: 375px) {
+  .bottom-line {
+    display: none;
+  }
+}
+
+/*****處方篩選區域************************************************/
+.prescription-select select {
+  width: 216px;
+  height: 38px;
+  font-size: 20px;
+  margin: 54px;
+  margin-left: 0px;
+}
+
+@media (max-width: 375px) {
+  .prescription-select select {
+    width: 309px;
+    height: 46px;
+    margin-top: 40px;
+    margin-bottom: 0px;
+    font-size: 18px;
+  }
+}
+@media (max-width: 375px) {
+  #month-stage {
+    margin-bottom: 50px;
+  }
+}
+
+/****處方資料卡***********************************/
+
+.prescription-card {
+  height: 415px;
+  background-color: #a0ddff;
+  border-radius: 30px;
+  display: flex;
+  margin-bottom: 50px;
+}
+
+@media (max-width: 375px) {
+  .prescription-card {
+    position: relative;
+    width: 309px;
+    height: 100%;
+    border-radius: 0px;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.hidden-bar {
+  display: none;
+}
+
+@media (max-width: 375px) {
+  .hidden-bar {
+    position: absolute;
+    width: 309px;
+    height: 42px;
+    display: block;
+    background: #00a0f0;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 375px) {
+  .hidden-bar img {
+    width: 20px;
+    height: 16px;
+  }
+}
+
+/***處方資料卡裡的li部分*****************************************/
+.infolist {
+  margin-top: 36.5px;
+}
+
+.infolist ul {
+  display: flex;
+}
+
+@media (max-width: 375px) {
+  .infolist ul {
+    flex-direction: column;
+    padding: 0px;
+    align-items: center;
+  }
+}
+
+.infolist li {
+  margin-top: 35px;
+  margin-right: 35px;
+  width: 311px;
+  height: 30px;
+  font-size: 20px;
+  letter-spacing: 0.1em;
+  color: black;
+  list-style-type: none;
+  border-bottom: 1px solid black;
+}
+
+@media (max-width: 375px) {
+  .infolist li {
+    width: 271px;
+    height: 28px;
+    margin: 0px;
+    margin-top: 23px;
+  }
+}
+
+/***處方資料卡裡圖片部分********************/
+.prescription-img {
+  margin-top: 30px;
+  width: 355px;
+  height: 359px;
+  position: relative;
+}
+
+@media (max-width: 375px) {
+  .prescription-img {
+    width: 281px;
+    height: 320px;
+    margin-bottom: 15px;
+  }
+}
+
+.prescription-img .prescription-preview {
+  width: 100%;
+  height: 100%;
+}
+
+.prescription-img .magnifier {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  width: 31px;
+  height: 31px;
+}
