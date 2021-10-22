@@ -1,0 +1,323 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/*CSS Reset**************************/
+.zi-member-revise {
+  width: 1140px;
+  display: flex;
+  flex-direction: column;
+  margin: 0px auto;
+  position: relative;
+  top: 240px;
+}
+
+@media (max-width: 375px) {
+  .zi-member-revise {
+    width: 306px;
+    top: 0px;
+  }
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 375px) {
+  .pagination {
+    display: none;
+  }
+}
+
+.pagination div {
+  width: 345px;
+  height: 60px;
+  background: #00a0f0;
+  border-radius: 10px 10px 0px 0px;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  letter-spacing: 0.22em;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#prescription-stage {
+  margin: 0px 50px;
+  background-color: #66cbff;
+}
+
+#order-list {
+  background-color: #66cbff;
+}
+
+.bottom-line {
+  margin-left: 3px;
+  width: 1135px;
+  height: 6px;
+  background-color: #00a0f0;
+}
+
+@media (max-width: 375px) {
+  .bottom-line {
+    display: none;
+  }
+}
+
+/* 表單內容 */
+
+.form-content {
+  width: 764px;
+  display: flex;
+  margin: 0px auto;
+  margin-top: 88px;
+  flex-direction: column;
+}
+
+@media (max-width: 375px) {
+  .form-content {
+    height: 55px;
+    font-size: 18px;
+    width: 307px;
+  }
+}
+
+.form-content label {
+  margin-top: 32px;
+  margin-bottom: 8px;
+  font-size: 20px;
+  color: #5c5c5c;
+  letter-spacing: 0.225em;
+}
+
+@media (max-width: 375px) {
+  .form-content label {
+    font-size: 16px;
+  }
+}
+
+.form-content p {
+  display: inline-block;
+}
+
+.form-content input {
+  font-size: 25px;
+  height: 65px;
+  padding: 8px;
+}
+
+@media (max-width: 375px) {
+  .form-content input {
+    height: 55px;
+    font-size: 18px;
+  }
+}
+
+.form-content .Birthday-text {
+  color: #5c5c5c;
+}
+
+@media (max-width: 375px) {
+  .form-content .Birthday-text {
+    height: 55px;
+    font-size: 18px;
+    padding: 20px 0px;
+  }
+}
+
+
+.password-text {
+  display: flex;
+  justify-content: space-between;
+}
+
+label p {
+  margin-bottom: 0px;
+}
+
+/*************下方按鈕部分***************************************/
+.button-flex {
+  margin: 36px auto;
+  display: flex;
+  width: 1140px;
+  position: relative;
+  bottom: 0px;
+  /* justify-content: center; */
+}
+
+@media (max-width: 375px) {
+  .button-flex {
+    display: flex;
+    height: 49px;
+    font-size: 18px;
+    width: 307px;
+    justify-content: space-between;
+    position: relative;
+    top: 600px;
+    left: 0;
+  }
+}
+
+.button-flex button {
+  margin-top: 46px;
+  margin-bottom: 46px;
+  width: 280px;
+  height: 60px;
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+  line-height: 21px;
+  letter-spacing: 0.25em;
+  color: #ffffff;
+  background-color: #00a0f0;
+}
+
+.button-flex .backstep {
+  margin-right: 197px;
+}
+
+@media (max-width: 375px) {
+  .button-flex .backstep {
+    margin-right: 0px;
+  }
+}
+
+.form-submit:hover {
+  opacity: 0.8;
+}
+
+@media (max-width: 375px) {
+  .button-flex button {
+    width: 100px;
+    height: 49px;
+    font-size: 18px;
+    letter-spacing: 0.1em;
+  }
+}
