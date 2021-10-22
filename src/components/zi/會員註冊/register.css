@@ -330,6 +330,6 @@ table {
   background-color: #00a0f0;
 }
 
-.zi-register-submit {
+.zi-register-submit:hover{
   opacity: 0.8;
 }
