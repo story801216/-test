@@ -129,7 +129,7 @@ table {
 }
 /*CSS Reset**************************/
 
-.zi {
+.zi-register {
   position: relative;
   top: 120px;
   display: flex;
@@ -137,7 +137,7 @@ table {
   align-items: center;
 }
 @media (max-width: 375px) {
-  .zi {
+  .zi-register{
     position: relative;
     top: 55px;
     display: inline-flex;
@@ -145,28 +145,28 @@ table {
     align-items: stretch;
   }
 }
-.zi .background {
+.zi-register-background {
   width: 100%;
   height: 1493px;
   opacity: 0.4;
   object-fit: cover;
 }
 @media (max-width: 375px) {
-  .zi .background {
+  .zi-register-background{
     display: none;
   }
 }
 
-.card-content {
+.zi-register-card-content {
   padding: 0px 53px;
 }
 @media (max-width: 375px) {
-  .card-content {
+  .zi-register-card-content {
     padding: 0px 35px;
   }
 }
 
-.zi-card {
+.zi-register-card {
   position: absolute;
   width: 873px;
   background: #ffffff;
@@ -174,7 +174,7 @@ table {
   border-radius: 31.6768px;
 }
 @media (max-width: 375px) {
-  .zi-card {
+  .zi-register-card {
     position: static;
     width: 375px;
     box-shadow: none;
@@ -182,7 +182,7 @@ table {
   }
 }
 
-.zi-card h1 {
+.zi-register-card h1 {
   margin-top: 38px;
   margin-bottom: 25px;
   font-weight: bold;
@@ -193,12 +193,12 @@ table {
 }
 
 @media (max-width: 375px) {
-  .zi-card h1 {
+  .zi-register-card h1 {
     font-size: 36px;
   }
 }
 
-.zi-card p {
+.zi-register-card p {
   margin-bottom: 25px;
   align-items: center;
   font-size: 20px;
@@ -207,24 +207,24 @@ table {
 }
 
 @media (max-width: 375px) {
-  .zi-card p {
+  .zi-register-card p {
     font-size: 16px;
   }
 }
 
-.card-line {
+.zi-register-card-line {
   border-top: 2px solid #66cbff;
 }
 
 /* 註冊表單內容 */
 
-.form-content {
+.zi-register-form-content {
   width: 100%;
   display: flex;
   flex-direction: column;
 }
 
-.form-content label {
+.zi-register-form-content label {
   margin-top: 32px;
   margin-bottom: 8px;
   font-size: 20px;
@@ -233,89 +233,78 @@ table {
 }
 
 @media (max-width: 375px) {
-  .form-content label {
+  .zi-register-form-content label {
     font-size: 16px;
   }
 }
 
-.form-content input {
+.zi-register-form-content input {
   font-size: 25px;
   height: 65px;
   padding: 8px;
 }
 
 @media (max-width: 375px) {
-  .form-content input {
+  .zi-register-form-content input {
     height: 55px;
     font-size: 18px;
   }
 }
 
-.form-login .Birthday-text {
+.zi-register-Birthday-text {
   color: #525252;
 }
 
-.password-text {
+.zi-register-Password-text {
   display: flex;
   justify-content: space-between;
 }
 
-.forget-pw {
-  margin-top: 32px;
-  font-size: 20px;
-  color: red;
-}
 
-@media (max-width: 375px) {
-  .forget-pw {
-    font-size: 16px;
-  }
-}
-
-.checkbox-flex {
+.zi-register-checkbox-flex {
   display: flex;
   align-items: center;
   margin-top: 51px;
   margin-bottom: 5px;
 }
 
-.checkbox-flex p {
+.zi-register-checkbox-flex p {
   margin-bottom: 0px;
 }
 
-.checkbox-flex a {
+.zi-register-checkbox-flex a {
   color: #414141;
   font-weight: bold;
   direction: none;
 }
 
-#register-Checkbox {
+#zi-register-Checkbox {
   margin-right: 30px;
   width: 25px;
   height: 25px;
 }
 
 @media (max-width: 375px) {
-  #register-Checkbox {
+  #zi-register-Checkbox {
     margin-right: 25px;
   }
 }
 
 /* 下方按鈕部分 */
-.button-flex {
+.zi-register-button-flex {
   display: flex;
   justify-content: center;
 }
 
 @media (max-width: 375px) {
-  .button-flex {
+  .zi-register-button-flex {
     display: flex;
     height: 49px;
     font-size: 18px;
   }
 }
 
-.form-content button {
+.zi-register-button-flex button {
   margin-top: 46px;
   margin-bottom: 46px;
   width: 296px;
@@ -329,7 +318,7 @@ table {
 }
 
 @media (max-width: 375px) {
-  .form-content button {
+  .zi-register-button-flex button {
     width: 100px;
     height: 49px;
     font-size: 18px;
@@ -337,10 +326,10 @@ table {
   }
 }
 
-.button-flex .register-submit {
+.zi-register-submit {
   background-color: #00a0f0;
 }
 
-.register-submit:hover {
+.zi-register-submit {
   opacity: 0.8;
 }
