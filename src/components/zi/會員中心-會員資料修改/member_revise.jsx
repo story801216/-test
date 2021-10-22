@@ -3,25 +3,25 @@ import './member_revise.css'
 function Member_revise() {
   return (
     <>
-      <div class="zi-member-revise">
-        <div class="pagination">
-          <div class="member-profile" id="member-profile">
+      <div className="zi-member-revise">
+        <div className="zi-member-revise-pagination">
+          <div className="member-profile" id="member-profile">
             會員資料
           </div>
-          <div class="prescription-stage" id="prescription-stage">
+          <div className="prescription-stage" id="prescription-stage">
             處方籤進度與紀錄
           </div>
-          <div class="order-list" id="order-list">
+          <div className="order-list" id="order-list">
             訂單查詢
           </div>
         </div>
-        <div class="bottom-line"></div>
-        <form class="form-content" action="">
+        <div className="zi-member-revise-bottom-line"></div>
+        <form className="zi-member-revise-form-content" action="">
           <label for="E-mail">電子郵件(不可修改)</label>
           <input
             type="email"
             id="E-mail"
-            class="Email-text"
+            className="zi-member-revise-Email-text"
             placeholder="請輸入電子郵件"
             disabled="disabled"
           />
@@ -30,7 +30,7 @@ function Member_revise() {
           <input
             type="password"
             id="Password"
-            class="Password-text"
+            className="zi-member-revise-Password-text"
             placeholder="請輸入密碼"
           />
 
@@ -38,15 +38,15 @@ function Member_revise() {
           <input
             type="text"
             id="Name"
-            class="Name-text"
+            className="zi-member-revise-Name-text"
             placeholder="請輸入姓名"
           />
 
-          <label for="Birthday">生日</label>
+          <label for="zi-member-revise-Birthday">生日</label>
           <input
             type="date"
-            id="Birthday"
-            class="Birthday-text"
+            id="zi-member-revise-Birthday"
+            className="zi-member-revise-Birthday-text"
             placeholder="請輸入生日"
           />
 
@@ -56,7 +56,7 @@ function Member_revise() {
           <input
             type="text"
             id="Id-number"
-            class="Id-number"
+            className="zi-member-revise-Id-number"
             placeholder="請輸入身分證字號"
             disabled="disabled"
           />
@@ -65,23 +65,23 @@ function Member_revise() {
           <input
             type="text"
             id="Mobile"
-            class="Mobile"
+            className="zi-member-revise-Mobile"
             placeholder="請輸入手機號碼"
           />
 
           <label for="Address">聯絡地址</label>
           <input
-            type="password"
+            type="text"
             id="Address"
-            class="Password-text"
+            className="zi-member-revise-Address"
             placeholder="請輸入聯絡地址"
           />
         </form>
-        <div class="button-flex">
-          <button type="submit" class="form-submit backstep">
+        <div className="zi-member-revise-button-flex">
+          <button type="submit" className="zi-member-revise-revisedbutton">
             修改
           </button>
-          <button type="submit" class="form-submit">
+          <button type="submit" className="zi-member-revise-form-submit">
             送出
           </button>
         </div>

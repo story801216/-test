@@ -144,18 +144,18 @@ table {
   }
 }
 
-.pagination {
+.zi-member-revise-pagination {
   display: flex;
   justify-content: center;
 }
 
 @media (max-width: 375px) {
-  .pagination {
+  .zi-member-revise-pagination {
     display: none;
   }
 }
 
-.pagination div {
+.zi-member-revise-pagination div {
   width: 345px;
   height: 60px;
   background: #00a0f0;
@@ -178,7 +178,7 @@ table {
   background-color: #66cbff;
 }
 
-.bottom-line {
+.zi-member-revise-bottom-line {
   margin-left: 3px;
   width: 1135px;
   height: 6px;
@@ -186,14 +186,14 @@ table {
 }
 
 @media (max-width: 375px) {
-  .bottom-line {
+  .zi-member-revise-bottom-line {
     display: none;
   }
 }
 
 /* 表單內容 */
 
-.form-content {
+.zi-member-revise-form-content {
   width: 764px;
   display: flex;
   margin: 0px auto;
@@ -202,14 +202,14 @@ table {
 }
 
 @media (max-width: 375px) {
-  .form-content {
+  .zi-member-revise-form-content {
     height: 55px;
     font-size: 18px;
     width: 307px;
   }
 }
 
-.form-content label {
+.zi-member-revise-form-content label {
   margin-top: 32px;
   margin-bottom: 8px;
   font-size: 20px;
@@ -218,34 +218,34 @@ table {
 }
 
 @media (max-width: 375px) {
-  .form-content label {
+  .zi-member-revise-form-content label {
     font-size: 16px;
   }
 }
 
-.form-content p {
+.zi-member-revise-form-content p {
   display: inline-block;
 }
 
-.form-content input {
+.zi-member-revise-form-content input {
   font-size: 25px;
   height: 65px;
   padding: 8px;
 }
 
 @media (max-width: 375px) {
-  .form-content input {
+  .zi-member-revise-form-content input {
     height: 55px;
     font-size: 18px;
   }
 }
 
-.form-content .Birthday-text {
+#zi-member-revise-Birthday {
   color: #5c5c5c;
 }
 
 @media (max-width: 375px) {
-  .form-content .Birthday-text {
+  #zi-member-revise-Birthday {
     height: 55px;
     font-size: 18px;
     padding: 20px 0px;
@@ -253,27 +253,27 @@ table {
 }
 
 
-.password-text {
+.zi-member-revise-Password-text {
   display: flex;
   justify-content: space-between;
 }
 
-label p {
+.zi-member-revise-form-content label p {
   margin-bottom: 0px;
 }
 
 /*************下方按鈕部分***************************************/
-.button-flex {
+.zi-member-revise-button-flex {
   margin: 36px auto;
   display: flex;
   width: 1140px;
   position: relative;
   bottom: 0px;
-  /* justify-content: center; */
+  justify-content: center;
 }
 
 @media (max-width: 375px) {
-  .button-flex {
+  .zi-member-revise-button-flex {
     display: flex;
     height: 49px;
     font-size: 18px;
@@ -285,7 +285,7 @@ label p {
   }
 }
 
-.button-flex button {
+.zi-member-revise-button-flex button {
   margin-top: 46px;
   margin-bottom: 46px;
   width: 280px;
@@ -299,22 +299,22 @@ label p {
   background-color: #00a0f0;
 }
 
-.button-flex .backstep {
+.zi-member-revise-revisedbutton {
   margin-right: 197px;
 }
 
 @media (max-width: 375px) {
-  .button-flex .backstep {
+  .zi-member-revise-revisedbutton {
     margin-right: 0px;
   }
 }
 
-.form-submit:hover {
+.zi-member-revise-form-submit:hover {
   opacity: 0.8;
 }
 
 @media (max-width: 375px) {
-  .button-flex button {
+  .zi-member-revise-button-flex button {
     width: 100px;
     height: 49px;
     font-size: 18px;
