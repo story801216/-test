@@ -361,7 +361,7 @@ table {
   }
 }
 
-.zi-select-shop-form-submit:hover {
+.zi-select-shop-button-flex button:hover {
   opacity: 0.8;
 }
 
