@@ -313,6 +313,10 @@ table {
   opacity: 0.8;
 }
 
+.zi-member-revise-revisedbutton:hover {
+  opacity: 0.8;
+}
+
 @media (max-width: 375px) {
   .zi-member-revise-button-flex button {
     width: 100px;
