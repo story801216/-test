@@ -4,19 +4,19 @@ import Background from '../../../img/預約領藥背景圖.jpg'
 function Prescription_Reserve() {
   return (
     <>
-      <div class="zi-Prescription">
-        <img class="background" src={Background} alt="" />
-        <div class="form-list">
-          <div class="card-content">
+      <div className="zi-Prescription">
+        <img className="zi-Prescription-background" src={Background} alt="" />
+        <div className="zi-Prescription-form-list">
+          <div className="zi-Prescription-card-content">
             <h1>填寫處方資料</h1>
             <p>建議您，至少提前一個禮拜預約，方便門市備藥喔</p>
-            <div class="card-line"></div>
-            <form class="form-content" action="">
+            <div className="zi-Prescription-card-line"></div>
+            <form className="zi-Prescription-form-content" action="">
               <label for="Name">姓名</label>
               <input
                 type="text"
                 id="Name"
-                class="Name-text"
+                className="zi-Prescription-Name-text"
                 placeholder="請輸入姓名"
               />
 
@@ -24,7 +24,7 @@ function Prescription_Reserve() {
               <input
                 type="text"
                 id="Id-number"
-                class="Id-number"
+                className="zi-Prescription-Id-number"
                 placeholder="請輸入身分證字號"
               />
 
@@ -32,7 +32,7 @@ function Prescription_Reserve() {
               <input
                 type="date"
                 id="Birthday"
-                class="Birthday-text"
+                className="zi-Prescription-Birthday-text"
                 placeholder="請輸入生日"
               />
 
@@ -40,7 +40,7 @@ function Prescription_Reserve() {
               <input
                 type="text"
                 id="Hospital"
-                class="Hospital"
+                className="zi-Prescription-Hospital"
                 placeholder="請輸入開立處方醫院"
               />
 
@@ -48,7 +48,7 @@ function Prescription_Reserve() {
               <input
                 type="text"
                 id="Mobile"
-                class="Mobile"
+                className="zi-Prescription-Mobile"
                 placeholder="請輸入聯絡電話"
               />
 
@@ -61,7 +61,7 @@ function Prescription_Reserve() {
               </select>
 
               <label for="pregnant">是否懷孕中</label>
-              <div class="radio-flex">
+              <div className="zi-Prescription-radio-flex">
                 <label>
                   <input type="radio" name="pregnant" value="First" />是
                 </label>
@@ -71,7 +71,7 @@ function Prescription_Reserve() {
               </div>
 
               <label for="Freq">是否正在哺乳</label>
-              <div class="radio-flex">
+              <div className="zi-Prescription-radio-flex">
                 <label>
                   <input type="radio" name="feeding" value="First" />是
                 </label>
@@ -82,16 +82,19 @@ function Prescription_Reserve() {
             </form>
           </div>
 
-          <div class="uploadimg-group">
+          <div className="zi-Prescription-uploadimg-group">
             <p>上傳處方(請上傳5MB以內JPG、PNG圖檔。最多五張)</p>
-            <div class="uploadpic">
-              <a href="#/" class="uploadbtn"></a>
+            <div className="zi-Prescription-uploadpic">
+              <a href="#/" className="zi-Prescription-uploadbtn">
+                <div className="zi-Prescription-plus1"></div>
+                <div className="zi-Prescription-plus2"></div>
+              </a>
               <a href="#/">如需縮圖請點這</a>
             </div>
           </div>
         </div>
-        <div class="button-flex">
-          <button type="submit" class="form-submit">
+        <div className="zi-Prescription-button-flex">
+          <button type="submit" className="zi-Prescription-submit">
             下一步
           </button>
         </div>
