@@ -291,12 +291,12 @@ label p {
 }
 
 .button-flex .backstep {
-  /* margin-right: 253px; */
+  margin-right: 253px;
 }
 
 @media (max-width: 375px) {
   .button-flex .backstep {
-    /* margin-right: 0px; */
+    margin-right: 0px;
   }
 }
 
