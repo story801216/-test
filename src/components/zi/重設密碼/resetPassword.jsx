@@ -4,19 +4,19 @@ import Background from '../../../img/loginBackground.png'
 function ResetPassword() {
   return (
     <>
-      <div class="zi">
-        <img class="background" src={Background} alt="" />
-        <div class="zi-card">
-          <div class="card-content">
+      <div className="zi-resetPassword">
+        <img className="zi-resetPassword-background" src={Background} alt="" />
+        <div className="zi-resetPassword-card">
+          <div className="zi-resetPassword-card-content">
             <h1>重設密碼</h1>
             <p>請填寫新的密碼</p>
-            <div class="card-line"></div>
-            <form class="form-content" action="">
+            <div className="zi-resetPassword-card-line"></div>
+            <form className="zi-resetPassword-form-content" action="">
               <label for="new-Password">新密碼</label>
               <input
                 type="password"
                 id="new-Password"
-                class="new-Password"
+                className="zi-resetPassword-new-Password"
                 placeholder="請輸入新密碼"
               />
 
@@ -24,11 +24,11 @@ function ResetPassword() {
               <input
                 type="password"
                 id="reset-Password"
-                class="reset-Password"
+                className="zi-resetPassword-reset-Password"
                 placeholder="請再次輸入新密碼"
               />
-              <div class="button-flex">
-                <button type="submit" class="reset-password-submit">
+              <div className="zi-resetPassword-button-flex">
+                <button type="submit" className="zi-resetPassword-submit">
                   送出
                 </button>
               </div>
