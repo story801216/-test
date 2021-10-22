@@ -144,42 +144,43 @@ table {
     justify-content:stretch;
   }
 }
-.zi-select-shop .background {
+.zi-select-shop-background {
   width: 100%;
   height: 1362px;
   opacity: 0.4;
   object-fit: cover;
 }
 @media (max-width: 375px) {
-  .zi-select-shop .background {
+  .zi-select-shop-background {
     display: none;
   }
 }
 
-.form-list {
+.zi-select-shop-form-list {
   display: flex;
   position: absolute;
   top: 0px;
 }
 
-.card-content {
+.zi-select-shop-card-content {
   /* position: absolute; */
   padding-right: 150px;
   width: 600px;
   margin-top: 150px;
 }
 @media (max-width: 375px) {
-  .card-content {
+  .zi-select-shop-card-content {
     margin-top: 0px;
     padding: 0px;
     position: absolute;
     width: 100%;
     box-shadow: none;
     border-radius: 0px;
+    left: 18px;
   }
 }
 
-.card-content h1 {
+.zi-select-shop-card-content h1 {
   margin-top: 38px;
   margin-bottom: 25px;
   font-weight: bold;
@@ -190,12 +191,12 @@ table {
 }
 
 @media (max-width: 375px) {
-  .card-content h1 {
+  .zi-select-shop-card-content h1 {
     font-size: 36px;
   }
 }
 
-.card-content p {
+.zi-select-shop-card-content p {
   margin-bottom: 25px;
   align-items: center;
   font-size: 20px;
@@ -204,21 +205,21 @@ table {
 }
 
 @media (max-width: 375px) {
-  .card-content p {
+  .zi-select-shop-card-content p {
     font-size: 16px;
     line-height: 25px;
   }
 }
 
-.card-line {
+.zi-select-shop-card-line {
   border-top: 2px solid #66cbff;
 }
 
-.autofindbtn {
+.zi-select-shop-autofindbtn {
   padding-right: 10px;
   color: white;
   margin-top: 44px;
-  margin-left: 15%;
+  margin-left: 26%;
   width: 266px;
   height: 56px;
   background-color: #7f7f7f;
@@ -230,7 +231,7 @@ table {
 }
 
 @media (max-width: 375px) {
-  .autofindbtn {
+  .zi-select-shop-autofindbtn {
     font-size: 18px;
     margin-left: 17%;
     width: 193px;
@@ -241,33 +242,34 @@ table {
 
 
 
-.autofindbtn:hover {
+.zi-select-shop-autofindbtn:hover {
   background-color: #949494;
 }
 
-.autofindbtn img {
+.zi-select-shop-autofindbtn img {
   margin-right: 10px;
   width: 31px;
   height: 31px;
 }
 
 @media (max-width: 375px) {
-  .autofindbtn img{
-    width: 15px;
+  .zi-select-shop-autofindbtn img{
+    width: 22px;
     height: 19px;
     margin-left: 6px;
+    margin-right: 5px;
   }
 }
 
 /* 註冊表單內容 */
 
-.form-content {
+.zi-select-shop-form-content {
   width: 100%;
   display: flex;
   flex-direction: column;
 }
 
-.form-content label {
+.zi-select-shop-form-content label {
   margin-top: 100px;
   margin-bottom: 8px;
   font-size: 20px;
@@ -275,31 +277,31 @@ table {
   letter-spacing: 0.225em;
 }
 
-.form-content .city-label {
+.zi-select-shop-city-label {
   margin-top: 44px;
 }
 
 @media (max-width: 375px) {
-  .form-content label {
+  .zi-select-shop-form-content label {
     font-size: 16px;
     margin-top: 30px;
   }
 }
 
-.form-content input {
+.zi-select-shop-form-content input {
   font-size: 25px;
   height: 65px;
   padding: 8px;
 }
 
 @media (max-width: 375px) {
-  .form-content input {
+  .zi-select-shop-form-content input {
     height: 55px;
     font-size: 18px;
   }
 }
 
-.form-content select {
+.zi-select-shop-form-content select {
   font-size: 25px;
   height: 75px;
   padding: 8px;
@@ -307,14 +309,14 @@ table {
 }
 
 @media (max-width: 375px) {
-  .form-content select {
+  .zi-select-shop-form-content select {
     height: 75px;
     font-size: 18px;
   }
 }
 
 /* ************下方按鈕部分 ***************************************/
-.button-flex {
+.zi-select-shop-button-flex {
   display: flex;
   width: 100%;
   position: absolute;
@@ -324,7 +326,7 @@ table {
 }
 
 @media (max-width: 375px) {
-  .button-flex {
+  .zi-select-shop-button-flex {
     width: 307px;
     position: absolute;
     top: 1030px;
@@ -335,7 +337,7 @@ table {
   }
 }
 
-.button-flex button {
+.zi-select-shop-button-flex button {
   margin-top: 46px;
   margin-bottom: 46px;
   width: 296px;
@@ -349,22 +351,22 @@ table {
   background-color: #00a0f0;
 }
 
-.button-flex .backstep {
+.zi-select-shop-backstep {
   margin-right: 253px;
 }
 
 @media (max-width: 375px) {
-  .button-flex .backstep {
+  .zi-select-shop-backstep {
     margin-right: 0px;
   }
 }
 
-.form-submit:hover {
+.zi-select-shop-form-submit:hover {
   opacity: 0.8;
 }
 
 @media (max-width: 375px) {
-  .button-flex button {
+  .zi-select-shop-button-flex button {
     width: 100px;
     height: 49px;
     font-size: 18px;
@@ -373,12 +375,12 @@ table {
 }
 /* ************右邊部分 ***************************************/
 
-.map-group {
+.zi-select-shop-map-group {
   margin-top: 145px;
 }
 
 @media (max-width: 375px) {
-  .map-group {
+  .zi-select-shop-map-group {
     /* display: none; */
     width: 307px;
     margin-top: 0px;
@@ -388,7 +390,7 @@ table {
   }
 }
 
-.map-group .uploadpic {
+.zi-select-shop-map-area {
   width: 100%;
   background: #dee8ef;
   border: 2px dashed #66cbff;
@@ -398,13 +400,13 @@ table {
   flex-direction: column;
 }
 
-.uploadpic .google-map {
+.zi-select-shop-google-map {
   width: 585px;
   height: 863px;
 }
 
 @media (max-width: 375px) {
-  .uploadpic .google-map {
+  .zi-select-shop-google-map {
     /* display: none; */
     width: 307px;
     height: 307px;

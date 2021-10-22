@@ -6,19 +6,19 @@ import Placeholder from '../../../img/icon/placeholder.png'
 function Select_shop() {
   return (
     <>
-      <div class="zi-select-shop">
-        <img class="background" src={Background} alt="" />
-        <div class="form-list">
-          <div class="card-content">
+      <div className="zi-select-shop">
+        <img className="zi-select-shop-background" src={Background} alt="" />
+        <div className="zi-select-shop-form-list">
+          <div className="zi-select-shop-card-content">
             <h1>選取領藥門市</h1>
             <p>可自行選取門市，也可自動找尋最近門市</p>
-            <div class="card-line"></div>
-            <div class="autofindbtn">
+            <div className="zi-select-shop-card-line"></div>
+            <div className="zi-select-shop-autofindbtn">
               <img src={Placeholder} alt="" />
               自動搜尋最近門市
             </div>
-            <form class="form-content" action="">
-              <label class="city-label" for="city">
+            <form className="zi-select-shop-form-content" action="">
+              <label className="zi-select-shop-city-label" for="city">
                 城市
               </label>
               <select name="city" id="city">
@@ -46,17 +46,17 @@ function Select_shop() {
             </form>
           </div>
 
-          <div class="map-group">
-            <div class="uploadpic">
+          <div className="zi-select-shop-map-group">
+            <div className="zi-select-shop-map-area">
               <Googlemap />
             </div>
           </div>
         </div>
-        <div class="button-flex">
-          <button type="submit" class="form-submit backstep">
+        <div className="zi-select-shop-button-flex">
+          <button type="submit" className="zi-select-shop-backstep">
             上一步
           </button>
-          <button type="submit" class="form-submit">
+          <button type="submit" className="zi-select-shop-form-submit">
             送出
           </button>
         </div>
