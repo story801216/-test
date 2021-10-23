@@ -144,52 +144,6 @@ table {
   }
 }
 
-.zi-member-revise-pagination {
-  display: flex;
-  justify-content: center;
-}
-
-@media (max-width: 375px) {
-  .zi-member-revise-pagination {
-    display: none;
-  }
-}
-
-.zi-member-revise-pagination div {
-  width: 345px;
-  height: 60px;
-  background: #00a0f0;
-  border-radius: 10px 10px 0px 0px;
-  text-align: center;
-  color: white;
-  font-size: 20px;
-  letter-spacing: 0.22em;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#prescription-stage {
-  margin: 0px 50px;
-  background-color: #66cbff;
-}
-
-#order-list {
-  background-color: #66cbff;
-}
-
-.zi-member-revise-bottom-line {
-  margin-left: 3px;
-  width: 1135px;
-  height: 6px;
-  background-color: #00a0f0;
-}
-
-@media (max-width: 375px) {
-  .zi-member-revise-bottom-line {
-    display: none;
-  }
-}
 
 /* 表單內容 */
 

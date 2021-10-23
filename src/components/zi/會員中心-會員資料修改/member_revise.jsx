@@ -1,21 +1,12 @@
 import './member_revise.css'
+import '../zi-共用元件/後臺分頁按鈕/Backstage-bookMark.jsx'
+import Member_bookMark from '../zi-共用元件/會員中心分頁按鈕/Member-bookMark'
 
 function Member_revise() {
   return (
     <>
       <div className="zi-member-revise">
-        <div className="zi-member-revise-pagination">
-          <div className="member-profile" id="member-profile">
-            會員資料
-          </div>
-          <div className="prescription-stage" id="prescription-stage">
-            處方籤進度與紀錄
-          </div>
-          <div className="order-list" id="order-list">
-            訂單查詢
-          </div>
-        </div>
-        <div className="zi-member-revise-bottom-line"></div>
+        <Member_bookMark />
         <form className="zi-member-revise-form-content" action="">
           <label for="E-mail">電子郵件(不可修改)</label>
           <input
