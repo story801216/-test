@@ -7,7 +7,7 @@ function BookMart(props) {
   const [optionNow, setOptionNow] = useState(0)
   const optionName = ['會員資料', '會員處方簽進度與紀錄', '訂單查詢']
   return (
-    <div className="bookMark">
+    <div className="Member-bookMark">
       {/* 電腦 */}
       {/* className 添加 now 變色 */}
       <ul className="option-list-computer">
@@ -47,7 +47,7 @@ function BookMart(props) {
               : MobileListRef.current.classList.add('show')
           }}
         >
-          <img className="Backstage-bookMark-mobile-icon" src={other} alt="" />
+          <img className="Member-bookMark-mobile-icon" src={other} alt="" />
         </a>
         <ul className="option-list-mobile" ref={MobileListRef}>
           {optionName.map((v, i) => {
