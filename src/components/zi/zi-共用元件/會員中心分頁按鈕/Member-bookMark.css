@@ -122,22 +122,25 @@
 }
 
 @media (max-width: 375px) {
+  /*手機板-整體大小與位置*/
   .Member-bookMark {
     width: 307px;
     position: relative;
     top: 95px;
   }
+  /*手機板-被選中的連結大小*/
   .Member-bookMark .option-mobile-now div.show {
     width: 247px;
   }
 
+  /*手機板-隱藏選單的大小與位置跟連結去底線*/
   .Member-bookMark .option-list-mobile .option a {
     width: 247px;
-    margin-left: 35px;
+    margin-left: 95px;
     text-decoration: none;
   }
 
-    /*手機板右邊三個點點*/
+    /*手機板-右邊三個點點*/
   .Member-bookMark-mobile-icon{
     margin-top: 11px;
   }
