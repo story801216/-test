@@ -13,7 +13,7 @@ function BookMart(props) {
     '營業數據',
   ]
   return (
-    <div className="bookMark">
+    <div className="Backstage-bookMark">
       {/* 電腦 */}
       {/* className 添加 now 變色 */}
       <ul className="option-list-computer">

@@ -1,4 +1,4 @@
-.bookMark {
+.Backstage-bookMark {
     margin: 0 auto;
     width: 1140px;
     display: flex;
@@ -8,8 +8,8 @@
 }
 
 /* 電腦選單條樣式 + 手機目前選中的選單樣式 */
-.bookMark .option-list-computer .option a,
-.bookMark .option-mobile-now div {
+.Backstage-bookMark .option-list-computer .option a,
+.Backstage-bookMark .option-mobile-now div {
     display: inline-block;
     font-size: 20px;
     color: #fff;
@@ -22,18 +22,18 @@
 }
 
 /* 手機 option為隱藏狀態 只有添加show的才顯示 */
-.bookMark .option-mobile-now div {
+.Backstage-bookMark .option-mobile-now div {
     display: none;
     
 }
 
 /* 點擊後顯示 */
-.bookMark .option-mobile-now div.show{
+.Backstage-bookMark .option-mobile-now div.show{
     display:inline-block;
 }
 
 /* 手機 ...圖示 */
-.bookMark .icon {
+.Backstage-bookMark .icon {
     display: block;
     position: relative;
     width: 45px;
@@ -42,7 +42,7 @@
 }
 
 /* 手機 選單條 */
-.bookMark .option-list-mobile {
+.Backstage-bookMark .option-list-mobile {
     display: none;
     background-color: #fff;
     position: absolute;
@@ -54,12 +54,12 @@
 }
 
 /* 點擊icon 開啟手機option-list */
-.bookMark .option-list-mobile.show {
+.Backstage-bookMark .option-list-mobile.show {
     display: block;
 }
 
 /* 選單條按鈕樣式 */
-.bookMark .option-list-mobile .option a {
+.Backstage-bookMark .option-list-mobile .option a {
     display: inline-block;
     font-size: 20px;
     color: #fff;
@@ -73,12 +73,12 @@
 }
 
 /* 手機 option-list最後一個不加mb */
-.bookMark .option-list-mobile .option:last-child a {
+.Backstage-bookMark .option-list-mobile .option:last-child a {
     margin-bottom: 0;
 }
 
 /* 關閉電腦版選單條 */
-.bookMark .option-list-computer {
+.Backstage-bookMark .option-list-computer {
     display: none;
 }
 
@@ -86,29 +86,29 @@
 
 
     /* 關閉手機現在顯示的頁簽 */
-    .bookMark .option-mobile-now {
+    .Backstage-bookMark .option-mobile-now {
         display: none;
     }
 
     /* 關閉icon */
-    .bookMark .icon {
+    .Backstage-bookMark .icon {
         display: none;
     }
 
     /* 開啟電腦版頁簽 */
-    .bookMark .option-list-computer {
+    .Backstage-bookMark .option-list-computer {
         display: flex;
         width: 100%;
         justify-content: space-between;
     }
 
     /* 電腦選單條個別寬度 */
-    .bookMark .option-list-computer .option {
+    .Backstage-bookMark .option-list-computer .option {
         width: calc(20% - 10px);
     }
 
     /* 電腦選單條個別寬度(繼承) + 樣式 */
-    .bookMark .option-list-computer .option a {
+    .Backstage-bookMark .option-list-computer .option a {
         width: 100%;
         height: 60px;
         line-height: 60px;
@@ -117,21 +117,21 @@
     }
 
     /* 電腦選單條 點擊後添加now變色 */
-    .bookMark .option-list-computer .option a.now {
+    .Backstage-bookMark .option-list-computer .option a.now {
         background-color: #00A0F0;
     }
 
 }
 
 @media (max-width: 375px) {
-    .bookMark{
+    .Backstage-bookMark{
      width: 300px;
     }
-    .bookMark .option-mobile-now div.show{
+    .Backstage-bookMark .option-mobile-now div.show{
         width: 240px;
     }
 
-    .bookMark .option-list-mobile .option a{
+    .Backstage-bookMark .option-list-mobile .option a{
         width: 240px;
         margin-left: 103px;
         text-decoration: none;
