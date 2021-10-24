@@ -139,8 +139,8 @@ table {
   box-sizing: border-box;
 } */
 .zi-Login {
-  position: relative;
-  top: 120px;
+  /* position: relative; */
+  /* top: 120px; */
   display: flex;
   justify-content: center;
   align-items: center;
