@@ -152,6 +152,7 @@ table {
     display: inline-flex;
     justify-content: stretch;
     align-items: stretch;
+    margin-bottom: 140px;
   }
 }
 .zi-Login-background {
