@@ -23,13 +23,13 @@ function Footer() {
       four: '醫院|藥局',
     },
     {
-      theClass: 'latest-news d-none d-lg-block',
+      theClass: 'top-latest-news latest-news d-none d-lg-block',
       one: '最新消息',
       two: '活動專區',
       three: '相關連結',
     },
     {
-      theClass: 'contact d-none d-lg-block',
+      theClass: 'top-latest-news contact d-none d-lg-block',
       one: '聯絡我們',
       two: '品牌介紹',
       three: '最新消息',
@@ -91,9 +91,9 @@ function Footer() {
                   placeholder="Enter your email address"
                 />
                 {/* 手機 */}
-                <button className="email-button d-block d-lg-none">訂閱</button>
+                <button className="email-button email-mobile-button d-block d-lg-none">訂閱</button>
                 {/* 桌機 */}
-                <button className="email-button d-none d-lg-block">
+                <button className="email-button email-pc-button d-none d-lg-block">
                   SUBSCRIBE ME
                 </button>
               </div>
