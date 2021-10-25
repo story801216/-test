@@ -7,24 +7,6 @@ function Prescription_stage() {
   return (
     <>
       <div className="zi-prescription_stage">
-        <div className="zi-prescription_stage-pagination">
-          <div className="member-profile" id="member-profile">
-            會員資料
-          </div>
-          <div
-            className="prescription-stage"
-            id="zi-prescription_stage-prescription-stage"
-          >
-            處方籤進度與紀錄
-          </div>
-          <div
-            className="zi-prescription_stage-order-list"
-            id="zi-prescription_stage-order-list"
-          >
-            訂單查詢
-          </div>
-        </div>
-        <div className="zi-prescription_stage-bottom-line"></div>
         <div className="zi-prescription_stage-prescription-select">
           <select name="select_stage" id="select-stage">
             <option value="0">請選擇調配進度</option>

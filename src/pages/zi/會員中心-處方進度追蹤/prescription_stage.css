@@ -134,62 +134,16 @@ table {
   flex-direction: column;
   margin: 0px auto;
   position: relative;
-  top: 240px;
 }
 
 @media (max-width: 375px) {
   .zi-prescription_stage {
     width: 306px;
-    top: 0px;
+    top: 55px;
+    margin-bottom: 40px;
   }
 }
 
-.zi-prescription_stage-pagination {
-  display: flex;
-  justify-content: center;
-}
-
-@media (max-width: 375px) {
-  .zi-prescription_stage-pagination {
-    display: none;
-  }
-}
-
-.zi-prescription_stage-pagination div {
-  width: 345px;
-  height: 60px;
-  background: #66cbff;
-  border-radius: 10px 10px 0px 0px;
-  text-align: center;
-  color: white;
-  font-size: 20px;
-  letter-spacing: 0.22em;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#zi-prescription_stage-prescription-stage {
-  margin: 0px 50px;
-  background-color: #00a0f0;
-}
-
-#zi-prescription_stage-order-list {
-  background-color: #66cbff;
-}
-
-.zi-prescription_stage-bottom-line {
-  margin-left: 2.5px;
-  width: 1135px;
-  height: 6px;
-  background-color: #00a0f0;
-}
-
-@media (max-width: 375px) {
-  .zi-prescription_stage-bottom-line {
-    display: none;
-  }
-}
 
 /*****處方篩選區域************************************************/
 .zi-prescription_stage-prescription-select select {
