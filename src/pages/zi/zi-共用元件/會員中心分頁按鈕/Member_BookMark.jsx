@@ -1,11 +1,11 @@
 import React, { useState, useRef } from 'react'
-import './Member-bookMark.css'
+import './Member_BookMark.css'
 import other from '../../../../img/icon/other.jpg'
 
 function BookMart(props) {
   const MobileListRef = useRef(null)
   const [optionNow, setOptionNow] = useState(0)
-  const optionName = ['會員資料', '會員處方簽進度與紀錄', '訂單查詢']
+  const optionName = ['會員資料', '會員處方簽進度與追蹤', '訂單查詢']
   return (
     <div className="Member-bookMark">
       {/* 電腦 */}
