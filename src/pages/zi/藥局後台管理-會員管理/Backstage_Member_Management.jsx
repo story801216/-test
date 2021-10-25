@@ -3,6 +3,27 @@ import Edit from '../../../img/icon/edit.png'
 import Delete from '../../../img/icon/delete.png'
 import magnifier from '../../../img/icon/magnifier.png'
 
+const memberinfo = [
+  {
+    sid: 0,
+    name: '王大明',
+    mail: '	123@gmail.com',
+    phone: '0988123123',
+    id: '	F123456789',
+    birthday: '101/01/01',
+    address: '台北市中正區中正路1號',
+  },
+  {
+    sid: 1,
+    name: '王大明',
+    mail: '	123@gmail.com',
+    phone: '0988123123',
+    id: '	F123456789',
+    birthday: '101/01/01',
+    address: '台北市中正區中正路1號',
+  },
+]
+
 function Backstage_Member_Management() {
   return (
     <>
@@ -30,6 +51,7 @@ function Backstage_Member_Management() {
             </button>
           </div>
         </div>
+
         <table className="Backstage-Member-Management-memberlist">
           <tr className="Backstage-Member-Management-table-title">
             <td className="Backstage-Member-Management-table-title-sid">
@@ -57,36 +79,121 @@ function Backstage_Member_Management() {
               地址
             </td>
           </tr>
+          {memberinfo.map((memberinfo, i) => {
+            return (
+              <tr className="Backstage-Member-Management-table-list">
+                <td
+                  className="Backstage-Member-Management-table-list-sid"
+                  key={memberinfo.sid}
+                >
+                  {memberinfo.sid + 1}
+                </td>
+                <td className="Backstage-Member-Management-table-list-name">
+                  {memberinfo.name}
+                </td>
+                <td className="Backstage-Member-Management-table-list-mail">
+                  {memberinfo.mail}
+                </td>
+                <td className="Backstage-Member-Management-table-list-phone">
+                  {memberinfo.phone}
+                </td>
+                <td className="Backstage-Member-Management-table-list-id">
+                  {memberinfo.id}
+                </td>
+                <td className="Backstage-Member-Management-table-list-birthday">
+                  {memberinfo.birthday}
+                </td>
+                <td
+                  className="Backstage-Member-Management-table-list-address"
+                  id="Backstage-Member-Management-table-list-address"
+                >
+                  {memberinfo.address}
+                </td>
 
-          <tr className="Backstage-Member-Management-table-list">
-            <td className="Backstage-Member-Management-table-list-sid">1</td>
-            <td className="Backstage-Member-Management-table-list-name">
-              王大明
-            </td>
-            <td className="Backstage-Member-Management-table-list-mail">
-              123@gmail.com
-            </td>
-            <td className="Backstage-Member-Management-table-list-phone">
-              0988123123
-            </td>
-            <td className="Backstage-Member-Management-table-list-id">
-              F123456789
-            </td>
-            <td className="Backstage-Member-Management-table-list-birthday">
-              101/01/01
-            </td>
-            <td
-              className="Backstage-Member-Management-table-list-address"
-              id="Backstage-Member-Management-table-list-address"
-            >
-              台北市中正區中正路1號
-            </td>
+                <td>
+                  <div className="Backstage-Member-Management-table-list-buttons">
+                    <a
+                      href="#/"
+                      className="Backstage-Member-Management-table-list-buttons-edit"
+                    >
+                      <div>
+                        <img src={Edit} alt="" />
+                      </div>
+                    </a>
+                    <a
+                      href="#/"
+                      className="Backstage-Member-Management-table-list-buttons-edit-delete"
+                    >
+                      <div>
+                        <img src={Delete} alt="" />
+                      </div>
+                    </a>
+                  </div>
+                </td>
+              </tr>
+            )
+          })}
+        </table>
 
-            <td>
-              <div className="Backstage-Member-Management-table-list-buttons">
+        {memberinfo.map((memberinfo, i) => {
+          return (
+            <div className="Backstage-Member-Management-mobile-memberlist">
+              <div className="Backstage-Member-Management-mobile-memberlist-cardline"></div>
+              <div className="Backstage-Member-Management-mobile-memberlist-title">
+                <ul>
+                  <li
+                    className="Backstage-Member-Management-mobile-memberlist-title-sid"
+                    id="Backstage-Member-Management-mobile-memberlist-title-sid"
+                    key={memberinfo.sid}
+                  >
+                    {memberinfo.sid + 1}
+                  </li>
+                  <li className="Backstage-Member-Management-mobile-memberlist-title-mail">
+                    信箱
+                  </li>
+                  <li className="Backstage-Member-Management-mobile-memberlist-title-phone">
+                    電話
+                  </li>
+                  <li className="Backstage-Member-Management-mobile-memberlist-title-id">
+                    身分證
+                  </li>
+                  <li className="Backstage-Member-Management-mobile-memberlist-title-birthday">
+                    生日
+                  </li>
+                  <li className="Backstage-Member-Management-mobile-memberlist-title-address">
+                    地址
+                  </li>
+                </ul>
+              </div>
+              <div className="Backstage-Member-Management-mobile-memberlist-info">
+                <ul>
+                  <li
+                    className="Backstage-Member-Management-mobile-memberlist-info-name"
+                    id="Backstage-Member-Management-mobile-memberlist-info-name"
+                  >
+                    {memberinfo.name}
+                  </li>
+                  <li className="Backstage-Member-Management-mobile-memberlist-info-mail">
+                    {memberinfo.mail}
+                  </li>
+                  <li className="Backstage-Member-Management-mobile-memberlist-info-phone">
+                    {memberinfo.phone}
+                  </li>
+                  <li className="Backstage-Member-Management-mobile-memberlist-info-id">
+                    {memberinfo.id}
+                  </li>
+                  <li className="Backstage-Member-Management-mobile-memberlist-info-birthday">
+                    {memberinfo.birthday}
+                  </li>
+                  <li className="Backstage-Member-Management-mobile-memberlist-info-address">
+                    {memberinfo.address}
+                  </li>
+                </ul>
+              </div>
+              <div className="Backstage-Member-Management-mobile-memberlist-buttons">
                 <a
                   href="#/"
-                  className="Backstage-Member-Management-table-list-buttons-edit"
+                  className="Backstage-Member-Management-mobile-memberlist-buttons-edit"
                 >
                   <div>
                     <img src={Edit} alt="" />
@@ -94,88 +201,16 @@ function Backstage_Member_Management() {
                 </a>
                 <a
                   href="#/"
-                  className="Backstage-Member-Management-table-list-buttons-edit-delete"
+                  className="Backstage-Member-Management-mobile-memberlist-buttons-delete"
                 >
                   <div>
                     <img src={Delete} alt="" />
                   </div>
                 </a>
               </div>
-            </td>
-          </tr>
-        </table>
-
-        <div className="Backstage-Member-Management-mobile-memberlist">
-          <div className="Backstage-Member-Management-mobile-memberlist-cardline"></div>
-          <div className="Backstage-Member-Management-mobile-memberlist-title">
-            <ul>
-              <li
-                className="Backstage-Member-Management-mobile-memberlist-title-sid"
-                id="Backstage-Member-Management-mobile-memberlist-title-sid"
-              >
-                1
-              </li>
-              <li className="Backstage-Member-Management-mobile-memberlist-title-mail">
-                信箱
-              </li>
-              <li className="Backstage-Member-Management-mobile-memberlist-title-phone">
-                電話
-              </li>
-              <li className="Backstage-Member-Management-mobile-memberlist-title-id">
-                身分證
-              </li>
-              <li className="Backstage-Member-Management-mobile-memberlist-title-birthday">
-                生日
-              </li>
-              <li className="Backstage-Member-Management-mobile-memberlist-title-address">
-                地址
-              </li>
-            </ul>
-          </div>
-          <div className="Backstage-Member-Management-mobile-memberlist-info">
-            <ul>
-              <li
-                className="Backstage-Member-Management-mobile-memberlist-info-name"
-                id="Backstage-Member-Management-mobile-memberlist-info-name"
-              >
-                王大明
-              </li>
-              <li className="Backstage-Member-Management-mobile-memberlist-info-mail">
-                123@gamil.com
-              </li>
-              <li className="Backstage-Member-Management-mobile-memberlist-info-phone">
-                0988123123
-              </li>
-              <li className="Backstage-Member-Management-mobile-memberlist-info-id">
-                F123456789
-              </li>
-              <li className="Backstage-Member-Management-mobile-memberlist-info-birthday">
-                101/01/01
-              </li>
-              <li className="Backstage-Member-Management-mobile-memberlist-info-address">
-                台北市中正區中正路1號
-              </li>
-            </ul>
-          </div>
-          <div className="Backstage-Member-Management-mobile-memberlist-buttons">
-            <a
-              href="#/"
-              className="Backstage-Member-Management-mobile-memberlist-buttons-edit"
-            >
-              <div>
-                <img src={Edit} alt="" />
-              </div>
-            </a>
-            <a
-              href="#/"
-              className="Backstage-Member-Management-mobile-memberlist-buttons-delete"
-            >
-              <div>
-                <img src={Delete} alt="" />
-              </div>
-            </a>
-          </div>
-        </div>
+            </div>
+          )
+        })}
       </div>
     </>
   )
