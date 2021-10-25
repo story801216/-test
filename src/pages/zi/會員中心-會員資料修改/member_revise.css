@@ -134,13 +134,13 @@ table {
   flex-direction: column;
   margin: 0px auto;
   position: relative;
-  top: 240px;
 }
 
 @media (max-width: 375px) {
   .zi-member-revise {
     width: 306px;
-    top: 0px;
+    top: 60px;
+    margin-bottom: 700px;
   }
 }
 
@@ -151,7 +151,6 @@ table {
   width: 764px;
   display: flex;
   margin: 0px auto;
-  margin-top: 88px;
   flex-direction: column;
 }
 

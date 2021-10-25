@@ -1,12 +1,12 @@
 import './member_revise.css'
 import '../zi-共用元件/後臺分頁按鈕/Backstage-bookMark.jsx'
-import Member_bookMark from '../zi-共用元件/會員中心分頁按鈕/Member-bookMark'
+// import Member_bookMark from '../zi-共用元件/會員中心分頁按鈕/Member-bookMark'
 
 function Member_revise() {
   return (
     <>
       <div className="zi-member-revise">
-        <Member_bookMark />
+        {/* <Member_bookMark /> */}
         <form className="zi-member-revise-form-content" action="">
           <label for="E-mail">電子郵件(不可修改)</label>
           <input
