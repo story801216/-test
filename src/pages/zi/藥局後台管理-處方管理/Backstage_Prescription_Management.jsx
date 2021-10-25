@@ -1,9 +1,19 @@
+import React, { useState } from 'react'
+import ReactDOM from 'react-dom'
+import EdiText from 'react-editext'
 import './Backstage_Prescription_Management.css'
 import magnifier from '../../../img/icon/magnifier.png'
 import Up_arrow from '../../../img/icon/up-arrow.png'
 import Prescription_preview from '../../../img/台大處方簽.jpg'
 
 function Backstage_Member_Management() {
+  const [editing, setEditing] = useState(false)
+  const [value, setValue] = useState('')
+
+  const handleSave = (value) => {
+    console.log(value)
+    setValue(value)
+  }
   return (
     <>
       <div class="Backstage-Prescription-Management">
@@ -81,7 +91,7 @@ function Backstage_Member_Management() {
           <div class="Backstage-Prescription-Management-prescription-img">
             <img
               class="Backstage-Prescription-Management-prescription-preview"
-            src={Prescription_preview}
+              src={Prescription_preview}
               alt=""
             />
             <img
