@@ -164,10 +164,10 @@ table {
 }
 
 @media (max-width: 375px) {
-    .Backstage-Prescription-Management-search{
-        margin-right: 0px;
-    }
+  .Backstage-Prescription-Management-search {
+    margin-right: 0px;
   }
+}
 
 .Backstage-Prescription-Management-search-area {
   display: flex;
@@ -245,6 +245,7 @@ table {
 
 /****處方資料卡***********************************/
 
+/*卡片主體樣式*/
 .Backstage-Prescription-Management-prescription-card {
   height: 415px;
   background-color: #a0ddff;
@@ -252,7 +253,7 @@ table {
   display: flex;
   margin-bottom: 50px;
 }
-
+/*手機板卡片主體樣式*/
 @media (max-width: 375px) {
   .Backstage-Prescription-Management-prescription-card {
     position: relative;
@@ -264,10 +265,11 @@ table {
   }
 }
 
+/*手機板縮放bar在PC板時消失*/
 .Backstage-Prescription-Management-hidden-bar {
   display: none;
 }
-
+/* 手機板縮放bar的樣式 */
 @media (max-width: 375px) {
   .Backstage-Prescription-Management-hidden-bar {
     position: absolute;
@@ -282,7 +284,7 @@ table {
     align-items: center;
   }
 }
-
+/*手機板縮放bar-箭頭icon大小*/
 @media (max-width: 375px) {
   .Backstage-Prescription-Management-hidden-bar img {
     width: 20px;
@@ -290,7 +292,25 @@ table {
   }
 }
 
-/***處方資料卡裡的li部分*****************************************/
+/***處方資料卡裡的部分*****************************************/
+
+/* 目前進度選擇欄樣式 */
+.Backstage-Prescription-Management-change-stage {
+  width: 200px;
+  height: 25px;
+  align-items: center;
+  font-size: 20px;
+  background-color: #a0ddff;
+  border: 0px;
+}
+
+@media (max-width: 375px) {
+  .Backstage-Prescription-Management-change-stage {
+    width: 165px;
+    letter-spacing: 0.5px
+  }
+}
+
 .Backstage-Prescription-Management-infolist {
   margin-top: 36.5px;
 }
