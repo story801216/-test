@@ -3,6 +3,31 @@ import Up_arrow from '../../../img/icon/up-arrow.png'
 import Prescription_preview from '../../../img/台大處方簽.jpg'
 import Magnifier from '../../../img/icon/magnifier.png'
 
+const prescription = [
+  {
+    sid: '0',
+    stage: '等候領取',
+    name: '王大明',
+    uploadtime: '2021.09.10 09:00',
+    shop: '中正店',
+    date: '8月15日',
+    hospital: '臺大醫院',
+    division: '家醫科',
+    times: '第二次',
+  },
+  {
+    sid: '0',
+    stage: '等候領取',
+    name: '王大明',
+    uploadtime: '2021.09.10 09:00',
+    shop: '中正店',
+    date: '8月15日',
+    hospital: '臺大醫院',
+    division: '家醫科',
+    times: '第二次',
+  },
+]
+
 function Prescription_stage() {
   return (
     <>
@@ -22,39 +47,47 @@ function Prescription_stage() {
             <option value="2">十月份處方</option>
           </select>
         </div>
-        <div className="zi-prescription_stage-prescription-card">
-          <div className="zi-prescription_stage-infolist">
-            <div className="zi-prescription_stage-hidden-bar">
-              <img src={Up_arrow} alt="" />
+        {prescription.map((prescription, i) => {
+          return (
+            <div className="zi-prescription_stage-prescription-card">
+              <div className="zi-prescription_stage-infolist">
+                <div className="zi-prescription_stage-hidden-bar">
+                  <img src={Up_arrow} alt="" />
+                </div>
+                <ul>
+                  <div>
+                    <li
+                      className="Prescription_stage-sid"
+                      key={prescription.sid}
+                    ></li>
+                    <li>目前進度:{prescription.stage}</li>
+                    <li>病患姓名:{prescription.name}</li>
+                    <li>上傳時間:{prescription.uploadtime}</li>
+                    <li>領藥門市:{prescription.shop}</li>
+                  </div>
+                  <div>
+                    <li>看診日期:{prescription.date}</li>
+                    <li>醫院:{prescription.hospital}</li>
+                    <li>科別:{prescription.division}</li>
+                    <li>調劑次數:{prescription.times}</li>
+                  </div>
+                </ul>
+              </div>
+              <div className="zi-prescription_stage-prescription-img">
+                <img
+                  className="zi-prescription_stage-prescription-preview"
+                  src={Prescription_preview}
+                  alt=""
+                />
+                <img
+                  className="zi-prescription_stage-magnifier"
+                  src={Magnifier}
+                  alt=""
+                />
+              </div>
             </div>
-            <ul>
-              <div>
-                <li>目前進度:等候領取</li>
-                <li>病患姓名:王大明</li>
-                <li>上傳時間:2021.09.10 09:00</li>
-                <li>領藥門市:中正店</li>
-              </div>
-              <div>
-                <li>看診日期:8月15日</li>
-                <li>醫院:台大醫院</li>
-                <li>科別:家醫科</li>
-                <li>調劑次數:第二次</li>
-              </div>
-            </ul>
-          </div>
-          <div className="zi-prescription_stage-prescription-img">
-            <img
-              className="zi-prescription_stage-prescription-preview"
-              src={Prescription_preview}
-              alt=""
-            />
-            <img
-              className="zi-prescription_stage-magnifier"
-              src={Magnifier}
-              alt=""
-            />
-          </div>
-        </div>
+          )
+        })}
       </div>
     </>
   )
