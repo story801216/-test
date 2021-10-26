@@ -26,6 +26,7 @@ function Prescription_Reserve() {
                 id="Id-number"
                 className="zi-Prescription-Id-number"
                 placeholder="請輸入身分證字號"
+                maxlength="10"
               />
 
               <label for="Birthday">病患出生年月日</label>
@@ -50,6 +51,7 @@ function Prescription_Reserve() {
                 id="Mobile"
                 className="zi-Prescription-Mobile"
                 placeholder="請輸入聯絡電話"
+                maxlength="10"
               />
 
               <label for="Freq">第幾次調劑</label>
@@ -70,7 +72,7 @@ function Prescription_Reserve() {
                 </label>
               </div>
 
-              <label for="Freq">是否正在哺乳</label>
+              <label for="feeding">是否正在哺乳</label>
               <div className="zi-Prescription-radio-flex">
                 <label>
                   <input type="radio" name="feeding" value="First" />是

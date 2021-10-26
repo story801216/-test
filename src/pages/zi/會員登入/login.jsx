@@ -29,7 +29,8 @@ function Login() {
                 type="password"
                 id="Password"
                 className="zi-Login-Password-text"
-                placeholder="請輸入密碼"
+                placeholder="請輸入6位數密碼"
+                minlength="6"
               />
 
               <div className="zi-Login-button-flex">
