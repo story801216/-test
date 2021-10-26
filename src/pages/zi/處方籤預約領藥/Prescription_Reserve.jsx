@@ -27,6 +27,7 @@ function Prescription_Reserve() {
                 className="zi-Prescription-Id-number"
                 placeholder="請輸入身分證字號"
                 maxlength="10"
+                minlength="10"
               />
 
               <label for="Birthday">病患出生年月日</label>
@@ -47,11 +48,12 @@ function Prescription_Reserve() {
 
               <label for="Mobile">聯絡電話</label>
               <input
-                type="text"
+                type="number"
                 id="Mobile"
                 className="zi-Prescription-Mobile"
                 placeholder="請輸入聯絡電話"
                 maxlength="10"
+                minlength="10"
               />
 
               <label for="Freq">第幾次調劑</label>

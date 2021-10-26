@@ -22,7 +22,9 @@ function Member_revise() {
             type="password"
             id="Password"
             className="zi-member-revise-Password-text"
-            placeholder="請輸入密碼"
+            placeholder="請輸入6位數密碼"
+            maxlength="6"
+            minlength="6"
           />
 
           <label for="Name">姓名</label>
@@ -54,10 +56,12 @@ function Member_revise() {
 
           <label for="Mobile">手機號碼</label>
           <input
-            type="text"
+            type="number"
             id="Mobile"
             className="zi-member-revise-Mobile"
             placeholder="請輸入手機號碼"
+            maxlength="10"
+            minlength="10"
           />
 
           <label for="Address">聯絡地址</label>
