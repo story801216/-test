@@ -14,10 +14,10 @@ app.use(express.json())
 
 /* 連線設定 */
 const db = mysql.createConnection({
-  user: 'story801216', /* 帳號 */
-  host: 'localhost',/* 主機 */
-  password: '123',/* 密碼 */
-  database: 'finalproject',/* 資料庫名稱 */
+  user: 'story801216' /* 帳號 */,
+  host: 'localhost' /* 主機 */,
+  password: '123' /* 密碼 */,
+  database: 'finalproject' /* 資料庫名稱 */,
 })
 
 /* 註冊功能 */
@@ -44,6 +44,22 @@ app.post('/create', (req, res) => {
   )
 })
 
+/* 登入功能 */
+app.post('/login', function (req, res) {
+  console.log(req.body)
+  const email = req.body.email
+  const password = req.body.password
+  db.query(
+    `SELECT * FROM users WHERE email='${email}' AND password='${password}'`,
+    function (err, rows, fields) {
+      console.log(rows)
+      if (rows.length === 0) {
+        return res.status(500).send('登入失敗!')
+      }
+      return res.send('登入成功!')
+    }
+  )
+})
 
 /* 阜號 */
 app.listen(3001, () => {
