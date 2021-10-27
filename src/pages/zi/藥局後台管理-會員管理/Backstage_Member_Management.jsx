@@ -2,29 +2,21 @@ import './Backstage_Member_Management.css'
 import Edit from '../../../img/icon/edit.png'
 import Delete from '../../../img/icon/delete.png'
 import magnifier from '../../../img/icon/magnifier.png'
-
-const memberinfo = [
-  {
-    sid: 0,
-    name: '王大明',
-    mail: '	123@gmail.com',
-    phone: '0988123123',
-    id: '	F123456789',
-    birthday: '101/01/01',
-    address: '台北市中正區中正路1號',
-  },
-  {
-    sid: 1,
-    name: '王大明',
-    mail: '	123@gmail.com',
-    phone: '0988123123',
-    id: '	F123456789',
-    birthday: '101/01/01',
-    address: '台北市中正區中正路1號',
-  },
-]
+import Axios from 'axios'
+import { useState } from 'react'
 
 function Backstage_Member_Management() {
+  const [getMember, setGetMembers] = useState([])
+
+  const getMembers = (e) => {
+    Axios.get('http://localhost:3001/Backstage_Member_Management').then(
+      (response) => {
+        setGetMembers(response.data)
+      }
+    )
+  }
+  getMembers()
+
   return (
     <>
       <div className="Backstage-Member-Management">
@@ -79,35 +71,35 @@ function Backstage_Member_Management() {
               地址
             </td>
           </tr>
-          {memberinfo.map((memberinfo, i) => {
+          {getMember.map((val, i) => {
             return (
               <tr className="Backstage-Member-Management-table-list">
                 <td
                   className="Backstage-Member-Management-table-list-sid"
-                  key={memberinfo.sid}
+                  key={val.sid}
                 >
-                  {memberinfo.sid + 1}
+                  {val.sid + 1}
                 </td>
                 <td className="Backstage-Member-Management-table-list-name">
-                  {memberinfo.name}
+                  {val.name}
                 </td>
                 <td className="Backstage-Member-Management-table-list-mail">
-                  {memberinfo.mail}
+                  {val.email}
                 </td>
                 <td className="Backstage-Member-Management-table-list-phone">
-                  {memberinfo.phone}
+                  {val.mobile}
                 </td>
                 <td className="Backstage-Member-Management-table-list-id">
-                  {memberinfo.id}
+                  {val.idNumber}
                 </td>
                 <td className="Backstage-Member-Management-table-list-birthday">
-                  {memberinfo.birthday}
+                  {val.birthday.substr(0,10)}
                 </td>
                 <td
                   className="Backstage-Member-Management-table-list-address"
                   id="Backstage-Member-Management-table-list-address"
                 >
-                  {memberinfo.address}
+                  {val.address}
                 </td>
 
                 <td>
@@ -135,7 +127,7 @@ function Backstage_Member_Management() {
           })}
         </table>
 
-        {memberinfo.map((memberinfo, i) => {
+        {getMember.map((val, i) => {
           return (
             <div className="Backstage-Member-Management-mobile-memberlist">
               <div className="Backstage-Member-Management-mobile-memberlist-cardline"></div>
@@ -144,9 +136,9 @@ function Backstage_Member_Management() {
                   <li
                     className="Backstage-Member-Management-mobile-memberlist-title-sid"
                     id="Backstage-Member-Management-mobile-memberlist-title-sid"
-                    key={memberinfo.sid}
+                    key={val.sid}
                   >
-                    {memberinfo.sid + 1}
+                    {val.sid + 1}
                   </li>
                   <li className="Backstage-Member-Management-mobile-memberlist-title-mail">
                     信箱
@@ -171,22 +163,22 @@ function Backstage_Member_Management() {
                     className="Backstage-Member-Management-mobile-memberlist-info-name"
                     id="Backstage-Member-Management-mobile-memberlist-info-name"
                   >
-                    {memberinfo.name}
+                    {val.name}
                   </li>
                   <li className="Backstage-Member-Management-mobile-memberlist-info-mail">
-                    {memberinfo.mail}
+                    {val.email}
                   </li>
                   <li className="Backstage-Member-Management-mobile-memberlist-info-phone">
-                    {memberinfo.phone}
+                    {val.mobile}
                   </li>
                   <li className="Backstage-Member-Management-mobile-memberlist-info-id">
-                    {memberinfo.id}
+                    {val.idNumber}
                   </li>
                   <li className="Backstage-Member-Management-mobile-memberlist-info-birthday">
-                    {memberinfo.birthday}
+                    {val.birthday.substr(0,10)}
                   </li>
                   <li className="Backstage-Member-Management-mobile-memberlist-info-address">
-                    {memberinfo.address}
+                    {val.address}
                   </li>
                 </ul>
               </div>
