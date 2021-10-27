@@ -1,7 +1,34 @@
 import './login.css'
+import { useState } from 'react'
+import Axios from 'axios'
 import Background from '../../../img/loginBackground.png'
 
 function Login() {
+  const [email, setEmail] = useState('')
+  const [password, setPassword] = useState('')
+
+  const login = (e) => {
+    e.preventDefault() // prevent form refresh
+    if (email !== '' && password !== '') {
+      Axios.post('http://localhost:3001/login', {
+        email: email,
+        password: password,
+      })
+        .then((res) => {
+          alert('登入成功，將回到首頁!')
+        })
+        .catch((e) => {
+          if (e.response.status === 500) {
+            alert('帳號或密碼錯誤！')
+          }
+        })
+    } else if (email === '') {
+      alert('請輸入帳號!')
+    } else {
+      alert('請輸入密碼!')
+    }
+  }
+
   return (
     <>
       <div className="zi-Login">
@@ -18,6 +45,10 @@ function Login() {
                 id="E-mail"
                 className="Email-text"
                 placeholder="請輸入電子郵件"
+                value={email}
+                onChange={(e) => {
+                  setEmail(e.target.value)
+                }}
               />
               <div className="zi-Login-password-text">
                 <label for="Password">密碼</label>
@@ -31,13 +62,21 @@ function Login() {
                 className="zi-Login-Password-text"
                 placeholder="請輸入6位數密碼"
                 minlength="6"
+                value={password}
+                onChange={(e) => {
+                  setPassword(e.target.value)
+                }}
               />
 
               <div className="zi-Login-button-flex">
                 <button type="button" className="zi-Login-register">
                   註冊會員
                 </button>
-                <button type="submit" className="zi-Login-login">
+                <button
+                  type="submit"
+                  className="zi-Login-login"
+                  onClick={login}
+                >
                   登入
                 </button>
               </div>
