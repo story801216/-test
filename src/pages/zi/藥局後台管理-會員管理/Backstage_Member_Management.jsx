@@ -93,7 +93,7 @@ function Backstage_Member_Management() {
                   {val.idNumber}
                 </td>
                 <td className="Backstage-Member-Management-table-list-birthday">
-                  {val.birthday.substr(0,10)}
+                  {val.birthday.substr(0, 10)}
                 </td>
                 <td
                   className="Backstage-Member-Management-table-list-address"
@@ -175,7 +175,7 @@ function Backstage_Member_Management() {
                     {val.idNumber}
                   </li>
                   <li className="Backstage-Member-Management-mobile-memberlist-info-birthday">
-                    {val.birthday.substr(0,10)}
+                    {val.birthday.substr(0, 10)}
                   </li>
                   <li className="Backstage-Member-Management-mobile-memberlist-info-address">
                     {val.address}
